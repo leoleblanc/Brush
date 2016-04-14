@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WearSyncService</string>
+    <string name="hello_world">Press send to send the following message to watch</string>
+</resources>
