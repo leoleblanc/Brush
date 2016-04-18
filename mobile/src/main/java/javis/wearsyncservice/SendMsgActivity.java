@@ -58,6 +58,9 @@ public class SendMsgActivity extends AppCompatActivity {
         Log.d("Bazooka", text);
         msgIntent.putExtra(SendWatchMessageIntentService.INPUT_EXTRA, text);
         startService(msgIntent);
+
+        Intent toSignUp = new Intent(this, signUpBrush.class);
+        startActivity(toSignUp);
     }
 
     private void write_to_phone(String parcel)
