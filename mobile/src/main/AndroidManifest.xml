@@ -30,14 +30,20 @@
             android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|uiMode"
             android:windowSoftInputMode="adjustNothing"
             android:theme="@style/AppTheme.NoActionBar">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <activity android:name=".signUpBrush">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".signUpBrush"/>
         <activity android:name=".signUpWithInfoName"/>
         <activity android:name=".toSignUpWithInfoAge"/>
         <activity android:name=".weeklyQuestions"/>

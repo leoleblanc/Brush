@@ -56,10 +56,10 @@ public class SendMsgActivity extends AppCompatActivity {
         EditText msg = (EditText)findViewById(R.id.msg);
         String text = msg.getText().toString();
         Log.d("Bazooka", text);
-        msgIntent.putExtra(SendWatchMessageIntentService.INPUT_EXTRA, text);
+        msgIntent.putExtra(SendWatchMessageIntentService.INPUT_EXTRA, "MSG;"+text);
         startService(msgIntent);
 
-        Intent toSignUp = new Intent(this, signUpBrush.class);
+        Intent toSignUp = new Intent(this, dashboard.class);
         startActivity(toSignUp);
     }
 
