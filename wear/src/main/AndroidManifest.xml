@@ -28,15 +28,23 @@
             android:name=".SendPhoneMessageIntentService"
             android:exported="false" />
 
+        <service android:name=".AccelService" />
+
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.DeviceDefault.Light">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- Switching the LAUNCHER activity to InstructionActivity -->
+
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
 
         <service android:name=".WatchWearableListenerService">
@@ -46,12 +54,30 @@
         </service>
 
         <activity android:name=".HelloWorldActivity">
-            <!--<intent-filter>
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
+        <activity
+            android:name=".InstructionActivity"
+            android:label="@string/title_activity_instruction">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TimerActivity"
+            android:label="@string/title_activity_timer" />
+        <activity
+            android:name=".ResultActivity"
+            android:label="@string/title_activity_result"></activity>
     </application>
 
 </manifest>
