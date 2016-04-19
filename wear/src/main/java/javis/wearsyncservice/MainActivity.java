@@ -133,7 +133,9 @@ public class MainActivity extends WearableActivity {
         @Override
         public void onReceive(Context c, Intent intent) {
             if (intent.getAction().equals(Constant.MY_INTENT_FILTER)) {
-                mTextView.setText(intent.getStringExtra(Constant.PHONE_TO_WATCH_TEXT));
+               // mTextView.setText(intent.getStringExtra(Constant.PHONE_TO_WATCH_TEXT));
+                Log.d("BAZOOKA","Inside the right recevier");
+                //notif();
             }
         }
     };
