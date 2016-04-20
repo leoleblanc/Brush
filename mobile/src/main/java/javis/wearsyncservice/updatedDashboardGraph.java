@@ -8,16 +8,16 @@ import android.view.View;
 /**
  * Created by Me on 4/16/16.
  */
-public class dashboardGraph extends Activity {
+public class updatedDashboardGraph extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dashboard_graph);
+        setContentView(R.layout.updated_dashboard_graph);
     }
 
     public void toDashboard(View v) {
-        Intent back = new Intent(this, dashboard.class);
+        Intent back = new Intent(this, updatedDashboard.class);
         startActivity(back);
     }
 }

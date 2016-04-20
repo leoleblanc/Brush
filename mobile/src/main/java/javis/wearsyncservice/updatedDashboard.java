@@ -8,21 +8,21 @@ import android.view.View;
 /**
  * Created by Me on 4/16/16.
  */
-public class dashboard extends Activity {
+public class updatedDashboard extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dashboard);
+        setContentView(R.layout.updated_dashboard);
     }
 
     public void toGraph(View v) {
-        Intent toGraph = new Intent(this, dashboardGraph.class);
+        Intent toGraph = new Intent(this, updatedDashboardGraph.class);
         startActivity(toGraph);
     }
 
     public void hitHome(View v) {
-        Intent toHome = new Intent(this, home.class);
+        Intent toHome = new Intent(this, updatedDashboardHome.class);
         startActivity(toHome);
     }
 

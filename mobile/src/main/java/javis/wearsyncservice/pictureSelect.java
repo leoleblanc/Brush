@@ -16,8 +16,13 @@ public class pictureSelect extends Activity {
         setContentView(R.layout.picture_select);
     }
 
-    public void toChildQuestionsPink(View v) {
-        Intent next = new Intent(this, childQuestionsPink.class);
+//    public void toChildQuestionsPink(View v) {
+//        Intent next = new Intent(this, childQuestionsPink.class);
+//        startActivity(next);
+//    }
+
+    public void toSignUpWithInfoName(View v) {
+        Intent next = new Intent(this, signUpWithInfoName.class);
         startActivity(next);
     }
 }

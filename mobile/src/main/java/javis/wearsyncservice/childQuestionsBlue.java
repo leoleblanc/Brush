@@ -17,7 +17,7 @@ public class childQuestionsBlue extends Activity {
     }
 
     public void toDashboard(View v) {
-        Intent next = new Intent(this, dashboard.class);
+        Intent next = new Intent(this, unupdatedDashboard.class);
         startActivity(next);
     }
 }

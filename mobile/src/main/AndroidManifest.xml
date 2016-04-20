@@ -48,9 +48,9 @@
         <activity android:name=".toSignUpWithInfoAge"/>
         <activity android:name=".weeklyQuestions"/>
         <activity android:name=".learnMore"/>
-        <activity android:name=".dashboard"/>
-        <activity android:name=".dashboardGraph"/>
-        <activity android:name=".home"/>
+        <activity android:name=".updatedDashboard"/>
+        <activity android:name=".updatedDashboardGraph"/>
+        <activity android:name=".updatedDashboardHome"/>
         <activity android:name=".notificationsView"/>
         <activity android:name=".notificationsSet"/>
         <activity android:name=".settings"/>
@@ -61,6 +61,9 @@
         <activity android:name=".childQuestionsPink"/>
         <activity android:name=".childQuestionsOrange"/>
         <activity android:name=".childQuestionsBlue"/>
+        <activity android:name=".unupdatedDashboard"/>
+        <activity android:name=".unupdatedDashboardGraph"/>
+        <activity android:name=".unupdatedDashboardHome"/>
 
 
         <service android:name=".PhoneWearableListenerService">

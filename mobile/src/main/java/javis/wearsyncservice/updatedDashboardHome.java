@@ -8,16 +8,16 @@ import android.view.View;
 /**
  * Created by Me on 4/16/16.
  */
-public class home extends Activity {
+public class updatedDashboardHome extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home);
+        setContentView(R.layout.updated_home);
     }
 
     public void toDashboard(View v) {
-        Intent dash = new Intent(this, dashboard.class);
+        Intent dash = new Intent(this, updatedDashboard.class);
         startActivity(dash);
     }
 

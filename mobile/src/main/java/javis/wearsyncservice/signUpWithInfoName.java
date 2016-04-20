@@ -20,4 +20,9 @@ public class signUpWithInfoName extends Activity {
         Intent next = new Intent(this, toSignUpWithInfoAge.class);
         startActivity(next);
     }
+
+    public void toSetPicture(View v) {
+        Intent next = new Intent(this, pictureSelect.class);
+        startActivity(next);
+    }
 }

@@ -10,8 +10,20 @@
         android:id="@+id/button22"
         android:alpha="1"
         android:background="#00000000"
-        android:onClick="toChildQuestionsPink"
+        android:onClick="toSignUpWithInfoName"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="52dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/button36"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/button22"
+        android:layout_centerHorizontal="true"
+        android:alpha="1"
+        android:background="#00000000"
+        android:onClick="toSignUpWithInfoName" />
 </RelativeLayout>

@@ -14,4 +14,16 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="190dp"
+        android:layout_height="68dp"
+        android:id="@+id/button37"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/button23"
+        android:layout_centerHorizontal="true"
+        android:onClick="toChildQuestionsOrange"
+        android:alpha="1"
+        android:background="#00000000" />
 </RelativeLayout>

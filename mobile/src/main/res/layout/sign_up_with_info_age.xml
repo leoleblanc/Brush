@@ -14,5 +14,5 @@
         android:layout_centerHorizontal="true"
         android:background="#00000000"
         android:alpha="1"
-        android:onClick="toPictureSelect" />
+        android:onClick="toChildQuestionsPink" />
 </RelativeLayout>
