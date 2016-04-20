@@ -12,10 +12,19 @@ public class ResultActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result);
+                super.onCreate(savedInstanceState);
+                setContentView(R.layout.activity_result);
 
-        // Stop AccelService
-        stopService(new Intent(this, AccelService.class));
+                fireMessage("UPDATED_GRAPH");
+
+                // Stop AccelService
+                stopService(new Intent(this, AccelService.class));
     }
+
+    private void fireMessage(String text) {
+        Intent msgIntent = new Intent(this, SendPhoneMessageIntentService.class);
+        msgIntent.putExtra(SendPhoneMessageIntentService.INPUT_EXTRA, text);
+        startService(msgIntent);
+    }
+
 }

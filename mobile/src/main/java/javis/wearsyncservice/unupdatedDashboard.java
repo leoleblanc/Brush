@@ -27,7 +27,7 @@ public class unupdatedDashboard extends Activity {
     }
 
     public void toUnupdatedSendMessage(View v) {
-//        Intent next = new Intent(this, unupdatedSendMessage.class);
-//        startActivity(next);
+        Intent next = new Intent(this, SendMsgActivity.class);
+        startActivity(next);
     }
 }

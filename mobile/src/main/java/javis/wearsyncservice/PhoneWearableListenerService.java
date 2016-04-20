@@ -16,6 +16,14 @@ public class PhoneWearableListenerService extends WearableListenerService {
     public void onMessageReceived(MessageEvent messageEvent) {
         if (messageEvent.getPath().equalsIgnoreCase(PhoneWatchClass.WATCH_TO_PHONE_MESSAGE_PATH)) {
             String receivedText = new String(messageEvent.getData());
+
+            if (receivedText.startsWith("UPDATED_GRAPH"))
+            {
+                Intent next = new Intent(this, updatedDashboard.class);
+                next.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(next);
+            }
+
             broadcastIntent(receivedText);
         } else {
             super.onMessageReceived(messageEvent);
