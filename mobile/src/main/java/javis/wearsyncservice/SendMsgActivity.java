@@ -20,13 +20,13 @@ public class SendMsgActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send_msg);
 
-        final EditText msg = (EditText)findViewById(R.id.msg);
+        /*final EditText msg = (EditText)findViewById(R.id.msg);
         msg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 msg.setText("");
             }
-        });
+        });*/
     }
 
     @Override
@@ -50,8 +50,9 @@ public class SendMsgActivity extends AppCompatActivity {
     //TODO: Get a screenshot without the 'enter message' editText
     {
         Intent msgIntent = new Intent(this, SendWatchMessageIntentService.class);
-        EditText msg = (EditText)findViewById(R.id.msg);
-        String text = msg.getText().toString();
+        //EditText msg = (EditText)findViewById(R.id.msg);
+        //String text = msg.getText().toString();
+        String text = "Dummy Message";
         Log.d("Bazooka", text);
         msgIntent.putExtra(SendWatchMessageIntentService.INPUT_EXTRA, "MSG;"+text);
         startService(msgIntent);
