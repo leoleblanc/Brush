@@ -20,4 +20,9 @@ public class toSignUpWithInfoAge extends Activity {
         Intent next = new Intent(this, weeklyQuestions.class);
         startActivity(next);
     }
+
+    public void toPictureSelect(View v) {
+        Intent next = new Intent(this, pictureSelect.class);
+        startActivity(next);
+    }
 }

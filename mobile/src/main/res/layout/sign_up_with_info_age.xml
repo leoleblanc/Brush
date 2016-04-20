@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sign_up_with_child_info_age_hand">
+    android:background="@drawable/sign_up_with_info_second">
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -14,5 +14,5 @@
         android:layout_centerHorizontal="true"
         android:background="#00000000"
         android:alpha="1"
-        android:onClick="toWeeklyQuestions" />
+        android:onClick="toPictureSelect" />
 </RelativeLayout>

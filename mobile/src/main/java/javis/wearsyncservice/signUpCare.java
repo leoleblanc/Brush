@@ -6,14 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 
 /**
- * Created by Me on 4/16/16.
+ * Created by Me on 4/19/16.
  */
-public class signUpBrush extends Activity {
+public class signUpCare extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sign_up_brush);
+        setContentView(R.layout.sign_up_care);
     }
 
     public void toSignUpWithInfoName(View v) {
@@ -21,14 +21,13 @@ public class signUpBrush extends Activity {
         startActivity(next);
     }
 
+    public void toBrush(View v) {
+        Intent next = new Intent(this, signUpBrush.class);
+        startActivity(next);
+    }
+
     public void toTrack(View v) {
         Intent next = new Intent(this, signUpTrack.class);
         startActivity(next);
     }
-
-    public void toCare(View v) {
-        Intent next = new Intent(this, signUpCare.class);
-        startActivity(next);
-    }
-
 }

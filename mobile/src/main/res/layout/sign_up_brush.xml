@@ -16,4 +16,25 @@
         android:onClick="toSignUpWithInfoName"
         android:alpha="1"
         android:background="#00000000"/>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/button14"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:alpha="1"
+        android:background="#00000000"
+        android:onClick="toTrack" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/button15"
+        android:layout_alignBottom="@+id/button14"
+        android:layout_toEndOf="@+id/button14"
+        android:onClick="toCare"
+        android:alpha="1"
+        android:background="#00000000" />
 </RelativeLayout>

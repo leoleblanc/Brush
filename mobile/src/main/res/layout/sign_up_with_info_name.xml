@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sign_up_with_child_info_name_gender">
+    android:background="@drawable/sign_up_with_info_first">
 
     <Button
         style="?android:attr/buttonStyleSmall"

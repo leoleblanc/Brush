@@ -55,6 +55,12 @@
         <activity android:name=".notificationsSet"/>
         <activity android:name=".settings"/>
         <activity android:name=".simplePlot"/>
+        <activity android:name=".signUpTrack"/>
+        <activity android:name=".signUpCare"/>
+        <activity android:name=".pictureSelect"/>
+        <activity android:name=".childQuestionsPink"/>
+        <activity android:name=".childQuestionsOrange"/>
+        <activity android:name=".childQuestionsBlue"/>
 
 
         <service android:name=".PhoneWearableListenerService">
