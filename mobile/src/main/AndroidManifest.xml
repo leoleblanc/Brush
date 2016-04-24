@@ -3,6 +3,7 @@
     package="javis.wearsyncservice">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -38,11 +39,11 @@
         </activity>
 
         <activity android:name=".signUpBrush">
-            <intent-filter>
+            <!--<intent-filter> THE CORRCET FIRST SCREEN!!!
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity android:name=".signUpWithInfoName"/>
         <activity android:name=".toSignUpWithInfoAge"/>
@@ -64,6 +65,47 @@
         <activity android:name=".unupdatedDashboard"/>
         <activity android:name=".unupdatedDashboardGraph"/>
         <activity android:name=".unupdatedDashboardHome"/>
+
+        <activity android:name=".SlidingMenuActivity">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+       <!-- <activity android:name=".ImageSelectActivity">-->
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        <!--</activity>-->
+        <activity android:name=".CircCropActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar">
+            <!-- <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>-->
+        </activity>
+        <activity android:name=".DrawerImplementation">
+            <!--<intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name=".CircCropImplementation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
 
         <service android:name=".PhoneWearableListenerService">
