@@ -37,7 +37,7 @@ public class signUpTrack extends Activity {
             //this.getSharedPreferences(signUpBrush.PREFS_NAME, 0).edit().clear().commit();
             //to delete the shared prefernce of the phone
             //Go directly to main activity.
-            Intent next = new Intent(this, unupdatedDashboard.class);
+            Intent next = new Intent(this, DashboardDay.class);
             startActivity(next);
         }
         else {

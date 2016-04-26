@@ -17,7 +17,7 @@ public class unupdatedDashboardGraph extends Activity {
     }
 
     public void toUnupdatedDashboard(View v) {
-        Intent next = new Intent(this, unupdatedDashboard.class);
+        Intent next = new Intent(this, DashboardDay.class);
         startActivity(next);
     }
 }
