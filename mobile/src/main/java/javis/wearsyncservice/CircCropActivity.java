@@ -76,7 +76,9 @@ public class CircCropActivity extends Activity {
      * On load image button click, start pick  image chooser activity.
      */
     public void onLoadImageClick(View view) {
+        //TODO: Remove the backgound blank person image
         startActivityForResult(CropImageHelper.getPickImageChooserIntent(this), 200);
+    //Second argument used to be 200
     }
 
     /**

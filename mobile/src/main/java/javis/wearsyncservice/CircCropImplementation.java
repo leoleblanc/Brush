@@ -34,14 +34,30 @@ import java.util.List;
  * Demo class showing how to call the dialog for the photo selection,
  * crop the photo and store it as a bitmap on the mobile internal storage
  */
-public class CircCropImplementation extends Activity {
+public class CircCropImplementation extends SlidingMenuActivity {
 
     public static int BITMAP_REQUEST_CODE = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_circ_crop_implementation);
+        //super.onCreate(savedInstanceState);
+        //setContentView(R.layout.activity_circ_crop_implementation);
+
+        if (savedInstanceState!=null)
+        {
+            savedInstanceState.putString("TITLE", "DASHBOARD");
+            savedInstanceState.putInt("LAYOUT", R.layout.activity_circ_crop_implementation);
+            savedInstanceState.putInt("LAYOUT_ID", R.id.buchanan);
+            super.onCreate(savedInstanceState);
+        }
+        else
+        {
+            Bundle b = new Bundle();
+            b.putString("TITLE", "DASHBOARD");
+            b.putInt("LAYOUT", R.layout.activity_circ_crop_implementation);
+            b.putInt("LAYOUT_ID", R.id.buchanan); //id of top level Relative/Linear etc Layout
+            super.onCreate(b);
+        }
 
         //ProgressWheel pw = new ProgressWheel(this, myAttributes);
         //ProgressWheel pw = (ProgressWheel) findViewById(R.id.pw_spinner);

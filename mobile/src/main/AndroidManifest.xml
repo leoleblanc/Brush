@@ -39,11 +39,11 @@
         </activity>
 
         <activity android:name=".signUpBrush">
-            <!--<intent-filter> THE CORRCET FIRST SCREEN!!!
+            <intent-filter> <!--THE CORRCET FIRST SCREEN!!!-->
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
         </activity>
         <activity android:name=".signUpWithInfoName"/>
         <activity android:name=".toSignUpWithInfoAge"/>
@@ -100,11 +100,11 @@
             </intent-filter>-->
         </activity>
         <activity android:name=".CircCropImplementation">
-            <intent-filter>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
 
 
