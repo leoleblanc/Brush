@@ -3,6 +3,7 @@
     package="javis.wearsyncservice">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -39,12 +40,13 @@
             -->
         </activity>
         <activity android:name=".signUpBrush">
-            <intent-filter>
+            <intent-filter> <!--THE CORRCET FIRST SCREEN!!!-->
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".signUpWithInfoName" />
         <activity android:name=".toSignUpWithInfoAge" />
         <activity android:name=".weeklyQuestions" />
@@ -67,6 +69,70 @@
             android:label="Dashboard" />
         <activity android:name=".unupdatedDashboardGraph" />
         <activity android:name=".unupdatedDashboardHome" />
+=======
+        <activity android:name=".signUpWithInfoName"/>
+        <activity android:name=".toSignUpWithInfoAge"/>
+        <activity android:name=".weeklyQuestions"/>
+        <activity android:name=".learnMore"/>
+        <activity android:name=".updatedDashboard"/>
+        <activity android:name=".updatedDashboardGraph"/>
+        <activity android:name=".updatedDashboardHome"/>
+        <activity android:name=".notificationsView"/>
+        <activity android:name=".notificationsSet"/>
+        <activity android:name=".settings"/>
+        <activity android:name=".simplePlot"/>
+        <activity android:name=".signUpTrack"/>
+        <activity android:name=".signUpCare"/>
+        <activity android:name=".pictureSelect"/>
+        <activity android:name=".childQuestionsPink"/>
+        <activity android:name=".childQuestionsOrange"/>
+        <activity android:name=".childQuestionsBlue"/>
+        <activity android:name=".unupdatedDashboard"/>
+        <activity android:name=".unupdatedDashboardGraph"/>
+        <activity android:name=".unupdatedDashboardHome"/>
+
+        <activity android:name=".SlidingMenuActivity">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+       <!-- <activity android:name=".ImageSelectActivity">-->
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        <!--</activity>-->
+        <activity android:name=".CircCropActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar">
+            <!-- <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>-->
+        </activity>
+        <activity android:name=".DrawerImplementation">
+            <!--<intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name=".CircCropImplementation">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+>>>>>>> 4219991259884f8adac5e003add0ff94e7ea7989
 
         <service android:name=".PhoneWearableListenerService">
             <intent-filter>

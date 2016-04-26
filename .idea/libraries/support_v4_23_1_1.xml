@@ -1,12 +1,16 @@
 <component name="libraryTable">
   <library name="support-v4-23.1.1">
     <ANNOTATIONS>
+<<<<<<< HEAD
       <root url="jar://$PROJECT_DIR$/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/annotations.zip!/" />
+=======
+      <root url="jar://$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/annotations.zip!/" />
+>>>>>>> 4219991259884f8adac5e003add0ff94e7ea7989
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/res" />
-      <root url="jar://$PROJECT_DIR$/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar!/" />
+      <root url="file://$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/res" />
+      <root url="jar://$PROJECT_DIR$/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
