@@ -12,4 +12,11 @@
     tools:context="javis.wearsyncservice.NotificationView"
     tools:showIn="@layout/activity_notification_view">
 
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm On/Off"
+        android:id="@+id/alarmToggle"
+        android:layout_centerHorizontal="true"
+        android:onClick="onToggleClicked" />
 </RelativeLayout>

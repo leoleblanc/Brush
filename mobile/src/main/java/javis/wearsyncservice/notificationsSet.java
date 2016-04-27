@@ -12,7 +12,7 @@ import android.view.View;
 /**
  * Created by Me on 4/16/16.
  */
-public class notificationsSet extends Activity {
+public class NotificationsSet extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -40,6 +40,7 @@
             -->
         </activity>
 
+
         <activity android:name=".signUpBrush"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
        <!-- <activity android:name=".signUpBrush">-->
@@ -57,7 +58,7 @@
         <activity android:name=".updatedDashboardGraph" />
         <activity android:name=".updatedDashboardHome" />
 
-        <activity android:name=".notificationsSet" />
+        <activity android:name=".NotificationsSet" />
         <activity android:name=".settings" />
         <activity android:name=".simplePlot" />
         <activity android:name=".pictureSelect" />
