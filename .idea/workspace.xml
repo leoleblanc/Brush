@@ -4,7 +4,6 @@
     <shared>
       <config />
     </shared>
-<<<<<<< HEAD
     <layouts>
       <layout url="file://$PROJECT_DIR$/mobile/src/main/res/layout/custom_dialog.xml">
         <config>
@@ -12,20 +11,16 @@
         </config>
       </layout>
     </layouts>
-=======
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="52faa01f-fe21-40e0-ad7a-59ad8ecc8052" name="Default" comment="" />
     <ignored path="Brush7.iws" />
-=======
     <list default="true" id="9688f087-f759-489e-bd6c-c45a16672785" name="Default" comment="" />
     <ignored path="brush2.iws" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
+
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,7 +42,6 @@
     </system>
   </component>
   <component name="FavoritesManager">
-<<<<<<< HEAD
     <favorites_list name="Brush7" />
   </component>
   <component name="FileEditorManager">
@@ -61,7 +55,7 @@
       </list>
     </option>
   </component>
-=======
+
     <favorites_list name="brush2" />
   </component>
   <component name="FileEditorManager">
@@ -93,25 +87,19 @@
       </file>
     </leaf>
   </component>
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
   <component name="GradleLocalSettings">
     <option name="availableProjects">
       <map>
         <entry>
           <key>
             <ExternalProjectPojo>
-<<<<<<< HEAD
-              <option name="name" value="Brush7" />
-=======
-              <option name="name" value="brush2" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-<<<<<<< HEAD
+
                 <option name="name" value="Brush7" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
@@ -150,29 +138,18 @@
                 <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-<<<<<<< HEAD
-                <option name="description" value="Displays the components produced by root project 'Brush7'. [incubating]" />
-=======
+
                 <option name="description" value="Displays the components produced by root project 'brush2'. [incubating]" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-<<<<<<< HEAD
                 <option name="description" value="Displays all dependencies declared in root project 'Brush7'." />
-=======
-                <option name="description" value="Displays all dependencies declared in root project 'brush2'." />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-<<<<<<< HEAD
                 <option name="description" value="Displays the insight into a specific dependency in root project 'Brush7'." />
-=======
-                <option name="description" value="Displays the insight into a specific dependency in root project 'brush2'." />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -187,38 +164,22 @@
                 <option name="name" value="init" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-<<<<<<< HEAD
                 <option name="description" value="Displays the configuration model of root project 'Brush7'. [incubating]" />
-=======
-                <option name="description" value="Displays the configuration model of root project 'brush2'. [incubating]" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-<<<<<<< HEAD
                 <option name="description" value="Displays the sub-projects of root project 'Brush7'." />
-=======
-                <option name="description" value="Displays the sub-projects of root project 'brush2'." />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-<<<<<<< HEAD
                 <option name="description" value="Displays the properties of root project 'Brush7'." />
-=======
-                <option name="description" value="Displays the properties of root project 'brush2'." />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-<<<<<<< HEAD
                 <option name="description" value="Displays the tasks runnable from root project 'Brush7' (some of the displayed tasks may belong to subprojects)." />
-=======
-                <option name="description" value="Displays the tasks runnable from root project 'brush2' (some of the displayed tasks may belong to subprojects)." />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -2438,11 +2399,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-<<<<<<< HEAD
         <entry key="C:\Users\Serah\AndroidStudioProjects\CS160 Stuff\Brush7" value="7305666411651" />
-=======
-        <entry key="C:\GroupProjects\brush2" value="7308925724065" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2922,11 +2879,7 @@
                   </entry>
                 </map>
               </option>
-<<<<<<< HEAD
-              <option name="name" value="Brush7" />
-=======
               <option name="name" value="brush2" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$APPLICATION_HOME_DIR$/gradle/gradle-2.8/src/announce" />
@@ -3058,7 +3011,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/mobile/src/main/java/javis/wearsyncservice/SendMsgActivity.java" />
         <option value="$PROJECT_DIR$/mobile/src/main/java/javis/wearsyncservice/DashboardDay.java" />
         <option value="$PROJECT_DIR$/mobile/src/main/AndroidManifest.xml" />
@@ -3066,10 +3018,8 @@
         <option value="$PROJECT_DIR$/mobile/src/main/res/drawable/bottomroundbutton.xml" />
         <option value="$PROJECT_DIR$/mobile/src/main/java/javis/wearsyncservice/CustomDialog.java" />
         <option value="$PROJECT_DIR$/mobile/src/main/res/layout/custom_dialog.xml" />
-=======
         <option value="$PROJECT_DIR$/wear/src/main/res/layout/activity_timer.xml" />
         <option value="$PROJECT_DIR$/wear/src/main/java/javis/wearsyncservice/TimerActivity.java" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
       </list>
     </option>
   </component>
@@ -3079,13 +3029,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-<<<<<<< HEAD
-    <option name="width" value="1384" />
-    <option name="height" value="738" />
-=======
     <option name="width" value="1938" />
     <option name="height" value="1060" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -3110,31 +3055,22 @@
       <sortByType />
     </navigator>
     <panes>
-<<<<<<< HEAD
       <pane id="Scope" />
-=======
       <pane id="ProjectPane" />
       <pane id="Scratches" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="Brush7" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Brush7" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="mobile" />
-=======
               <option name="myItemId" value="brush2" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
@@ -3146,7 +3082,7 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="wear" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
+
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -3156,18 +3092,12 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
-              <option name="myItemId" value="Brush7" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="mobile" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-=======
               <option name="myItemId" value="brush2" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
@@ -3182,16 +3112,11 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="Brush7" />
-=======
-              <option name="myItemId" value="brush2" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -3209,11 +3134,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="Brush7" />
-=======
-              <option name="myItemId" value="brush2" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -3237,7 +3158,6 @@
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-<<<<<<< HEAD
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="2565c2e9" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="86_API_21_Watch" />
   </component>
@@ -3245,10 +3165,6 @@
     <key name="android.template.packageName">
       <recent name="javis.wearsyncservice" />
     </key>
-=======
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Android_Wear_Round_API_21" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
   </component>
   <component name="RunManager" selected="Android Application.wear">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -3430,22 +3346,19 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
       <changelist id="52faa01f-fe21-40e0-ad7a-59ad8ecc8052" name="Default" comment="" />
       <created>1461781731412</created>
       <option name="number" value="Default" />
       <updated>1461781731412</updated>
-=======
       <changelist id="9688f087-f759-489e-bd6c-c45a16672785" name="Default" comment="" />
       <created>1461785205988</created>
       <option name="number" value="Default" />
       <updated>1461785205988</updated>
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
+
     <frame x="-9" y="-9" width="1384" height="738" extended-state="7" />
     <editor active="false" />
     <layout>
@@ -3480,7 +3393,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-=======
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
@@ -3514,7 +3426,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -3525,7 +3436,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/mobile/src/main/java/javis/wearsyncservice/CircCropImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.5262136">
@@ -3605,7 +3515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9145631">
           <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
-=======
     <entry file="file://$PROJECT_DIR$/wear/src/main/res/layout/activity_timer.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-57.264706">
@@ -3623,7 +3532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="7.0903955">
           <caret line="304" column="0" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
->>>>>>> 3a9836f06b1da9649d9fb6fd9125905eb120addc
           <folding />
         </state>
       </provider>
