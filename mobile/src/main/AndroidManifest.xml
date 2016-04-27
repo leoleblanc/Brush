@@ -38,7 +38,8 @@
             </intent-filter>-->
         </activity>
 
-        <activity android:name=".signUpBrush">
+        <activity android:name=".signUpBrush"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter> <!--THE CORRCET FIRST SCREEN!!!-->
                 <action android:name="android.intent.action.MAIN" />
 
@@ -56,8 +57,10 @@
         <activity android:name=".notificationsSet"/>
         <activity android:name=".settings"/>
         <activity android:name=".simplePlot"/>
-        <activity android:name=".signUpTrack"/>
-        <activity android:name=".signUpCare"/>
+        <activity android:name=".signUpTrack"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name=".signUpCare"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity android:name=".pictureSelect"/>
         <activity android:name=".childQuestionsPink"/>
         <activity android:name=".childQuestionsOrange"/>

@@ -15,6 +15,21 @@ public class signUpTrack extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up_track);
+
+        final View decorView = getWindow().getDecorView();
+
+        decorView.setOnTouchListener(new OnSwipeTouchListener(this) {
+            @Override
+            public void onSwipeLeft() {
+                toCare(decorView);
+            }
+
+            @Override
+            public void onSwipeRight() {
+                toBrush(decorView);
+            }
+        });
+
     }
 
     public void toBrush(View v) {

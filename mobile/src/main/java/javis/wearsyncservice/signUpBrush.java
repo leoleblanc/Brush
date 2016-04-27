@@ -4,12 +4,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.GestureDetector;
 import android.view.View;
 
 /**
  * Created by Me on 4/16/16.
  */
-public class signUpBrush extends Activity {
+public class signUpBrush extends Activity
+{
 
     public static final String PREFS_NAME = "MyPrefsFile";
 
@@ -17,7 +20,24 @@ public class signUpBrush extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up_brush);
+
+        final View decorView = getWindow().getDecorView();
+
+        decorView.setOnTouchListener(new OnSwipeTouchListener(this) {
+            @Override
+            public void onSwipeLeft() {
+                toTrack(decorView);
+            }
+
+            @Override
+            public void onSwipeRight() {
+                //DO NOTHING.
+            }
+        });
+
     }
+
+
 
     public void toSignUpWithInfoName(View v) {
         SharedPreferences settings = getSharedPreferences(signUpBrush.PREFS_NAME, 0);

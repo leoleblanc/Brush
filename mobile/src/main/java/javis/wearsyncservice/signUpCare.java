@@ -15,6 +15,21 @@ public class signUpCare extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_up_care);
+
+        final View decorView = getWindow().getDecorView();
+
+        decorView.setOnTouchListener(new OnSwipeTouchListener(this) {
+            @Override
+            public void onSwipeLeft() {
+                //DO NOTHING.
+            }
+
+            @Override
+            public void onSwipeRight() {
+                toTrack(decorView);
+            }
+        });
+
     }
 
     public void toSignUpWithInfoName(View v) {
