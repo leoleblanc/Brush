@@ -41,9 +41,10 @@ public class SendMsgActivity extends AppCompatActivity {
         unregisterReceiver();
     }
 
+
     public void SendMsgToWatch(View w)
     /**
-     * Called onClick of the send mesage button. Starts the service to send the
+     * Called  OLD onClick of the send mesage button. Starts the service to send the
      * message in the editText to the watch.
      */
     //TODO: What happens if the editText is empty? Prompt the user to reenter

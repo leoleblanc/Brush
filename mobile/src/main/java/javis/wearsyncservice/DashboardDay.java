@@ -1,5 +1,6 @@
 package javis.wearsyncservice;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -41,8 +42,23 @@ public class DashboardDay extends AppCompatActivity {
         startActivity(next);
     }
 //
-    public void sendWatchMessage(View v) {
-        Intent next = new Intent(this, NotificationView.class);
-        startActivity(next);
+    public void sendWatchMessage(View v)
+    /**
+     * Called onClick of the Send Message button
+     */
+    {
+        /*Intent next = new Intent(this, NotificationView.class);
+        startActivity(next); NOT THE CORRECT FLOW INTERACTION*/
+
+        /*final Dialog d = new Dialog(this,android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);
+        d.setContentView(R.layout.custom_dialog);
+        d.setCanceledOnTouchOutside(true);
+        d.setCancelable(true);
+        d.getWindow().setLayout(400,400);
+        d.show();*/
+
+        Intent i = new Intent(this, CustomDialog.class);
+        startActivity(i);
+
     }
 }
