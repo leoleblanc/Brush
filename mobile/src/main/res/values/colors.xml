@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#EB5757</color>
+    <color name="colorPrimaryDark">#b13a3a</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="darkGrey">#333333</color>
+    <color name="darkGrey">#585858</color>
     <color name="transparent">#00000000</color>
+<<<<<<< HEAD
+    <color name="scoreBackground">#86D3ED</color>
+    <color name="white">#ffff</color>
+=======
     <color name="actionbar_color">#EB5757</color>
     <color name="drawer_arrow_second_color">#303f9f</color>
     <color name="pink">#EB5757</color>
@@ -16,4 +20,5 @@
     <color name="orange">#f39b4b</color>
     <color name="yellow">#fff435</color>
     <color name="green">#6fc25c</color>
+>>>>>>> 4219991259884f8adac5e003add0ff94e7ea7989
 </resources>

@@ -6,10 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
 
 /**
  * Created by Me on 4/16/16.
@@ -23,12 +21,12 @@ public class notificationsSet extends Activity {
     }
 
     public void cancel(View v) {
-        Intent cancel = new Intent(this, notificationsView.class);
+        Intent cancel = new Intent(this, NotificationView.class);
         startActivity(cancel);
     }
 
     public void save(View v) {
-        Intent save = new Intent(this, notificationsView.class);
+        Intent save = new Intent(this, NotificationView.class);
 
         fireMessage("Set Alarm");
 

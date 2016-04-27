@@ -22,7 +22,7 @@ public class updatedDashboardHome extends Activity {
     }
 
     public void toNotifications(View v) {
-        Intent notifications = new Intent(this, notificationsView.class);
+        Intent notifications = new Intent(this, NotificationView.class);
         startActivity(notifications);
     }
 
