@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WearSyncService</string>
+    <string name="hello_world">Press send to send the following message to watch</string>
+    <string name="title_activity_instruction">InstructionActivity</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="title_activity_timer">TimerActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+</resources>

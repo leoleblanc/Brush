@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/unupdated_dash_menu_one_button">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="190dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="147dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout2" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/button31"
+            android:layout_gravity="center_horizontal"
+            android:alpha="1"
+            android:background="#00000000"
+            android:onClick="toUnupdatedDashboard" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/button32"
+            android:layout_gravity="center_horizontal"
+            android:alpha="1"
+            android:background="#00000000"
+            android:onClick="toNotifications" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/button33"
+            android:layout_gravity="center_horizontal"
+            android:alpha="1"
+            android:background="#00000000"
+            android:onClick="toSettings" />
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to plot"
+        android:id="@+id/button34"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="67dp"
+        android:onClick="toPlot" />
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signuptrack">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:id="@+id/button16"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:alpha="0.75"
+        android:background="@drawable/roundbutton"
+        android:onClick="toSignUpWithInfoName"
+        android:text="Sign Up"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/button17"
+        android:background="#00000000"
+        android:alpha="1"
+        android:layout_marginStart="103dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button16"
+        android:layout_marginBottom="20dp"
+        android:onClick="toBrush" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/button18"
+        android:background="#00000000"
+        android:alpha="1"
+        android:layout_alignTop="@+id/button17"
+        android:layout_toEndOf="@+id/button17"
+        android:layout_marginStart="34dp"
+        android:onClick="toCare"
+        android:nestedScrollingEnabled="false" />
+</RelativeLayout>

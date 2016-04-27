@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkGrey">#333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="actionbar_color">#EB5757</color>
+    <color name="drawer_arrow_second_color">#303f9f</color>
+    <color name="pink">#EB5757</color>
+    <color name="indigo">#482E83</color>
+    <color name="purple">#9470D2</color>
+    <color name="periwinkle">#6C8AEE</color>
+    <color name="lightblue">#86D3ED</color>
+    <color name="oldrose">#bf6e87</color>
+    <color name="orange">#f39b4b</color>
+    <color name="yellow">#fff435</color>
+    <color name="green">#6fc25c</color>
+</resources>
