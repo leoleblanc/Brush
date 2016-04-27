@@ -5,10 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="darkGrey">#585858</color>
     <color name="transparent">#00000000</color>
-<<<<<<< HEAD
     <color name="scoreBackground">#86D3ED</color>
     <color name="white">#ffff</color>
-=======
     <color name="actionbar_color">#EB5757</color>
     <color name="drawer_arrow_second_color">#303f9f</color>
     <color name="pink">#EB5757</color>
