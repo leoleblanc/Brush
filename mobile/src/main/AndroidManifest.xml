@@ -46,7 +46,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity android:name=".signUpWithInfoName" />
         <activity android:name=".toSignUpWithInfoAge" />
         <activity android:name=".weeklyQuestions" />
@@ -54,7 +53,7 @@
         <activity android:name=".updatedDashboard" />
         <activity android:name=".updatedDashboardGraph" />
         <activity android:name=".updatedDashboardHome" />
-        <activity android:name=".NotificationsView" />
+
         <activity android:name=".notificationsSet" />
         <activity android:name=".settings" />
         <activity android:name=".simplePlot" />
@@ -66,30 +65,10 @@
         <activity android:name=".childQuestionsBlue" />
         <activity
             android:name=".DashboardDay"
-            android:label="Dashboard" />
+            android:label="Dashboard"
+            android:theme="@style/Theme.AppCompat"/>
         <activity android:name=".unupdatedDashboardGraph" />
         <activity android:name=".unupdatedDashboardHome" />
-=======
-        <activity android:name=".signUpWithInfoName"/>
-        <activity android:name=".toSignUpWithInfoAge"/>
-        <activity android:name=".weeklyQuestions"/>
-        <activity android:name=".learnMore"/>
-        <activity android:name=".updatedDashboard"/>
-        <activity android:name=".updatedDashboardGraph"/>
-        <activity android:name=".updatedDashboardHome"/>
-        <activity android:name=".notificationsView"/>
-        <activity android:name=".notificationsSet"/>
-        <activity android:name=".settings"/>
-        <activity android:name=".simplePlot"/>
-        <activity android:name=".signUpTrack"/>
-        <activity android:name=".signUpCare"/>
-        <activity android:name=".pictureSelect"/>
-        <activity android:name=".childQuestionsPink"/>
-        <activity android:name=".childQuestionsOrange"/>
-        <activity android:name=".childQuestionsBlue"/>
-        <activity android:name=".unupdatedDashboard"/>
-        <activity android:name=".unupdatedDashboardGraph"/>
-        <activity android:name=".unupdatedDashboardHome"/>
 
         <activity android:name=".SlidingMenuActivity">
             <!--<intent-filter>
@@ -132,7 +111,6 @@
             </intent-filter>-->
         </activity>
 
->>>>>>> 4219991259884f8adac5e003add0ff94e7ea7989
 
         <service android:name=".PhoneWearableListenerService">
             <intent-filter>
@@ -141,13 +119,10 @@
         </service>
 
         <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".NotificationView"
             android:label="@string/title_activity_notification_view"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat">
+        </activity>
     </application>
 
 </manifest>
