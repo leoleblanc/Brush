@@ -4,11 +4,13 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.preference.Preference;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,6 +19,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import java.io.FileInputStream;
+import java.util.Calendar;
 
 /**
  * Created by Me on 4/19/16.
@@ -31,6 +34,27 @@ public class DashboardDay extends SlidingMenuActivity {
     protected void onCreate(Bundle savedInstanceState) {
         /*super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_day);*/
+//        String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+//
+//        SharedPreferences data = getPreferences(0); //for storing data
+//        SharedPreferences.Editor editor = data.edit(); //to edit data
+//        //if day of the week is Sunday, reset the data for the week
+//        Calendar c = Calendar.getInstance();
+//        int val = c.get(Calendar.DAY_OF_WEEK);
+//        String day = days[val];
+//        if (day.equals("Sunday")) {
+//            resetData(data);
+//        }
+//        //dummy data, get real data
+//        editor.putInt("Sun", 90);
+//        editor.putInt("Mon", 86);
+//        editor.putInt("Tue", 85);
+//        editor.putInt("Wed", 80);
+//        editor.putInt("Thu", 75);
+//        editor.putInt("Fri", 80);
+//        editor.putInt("Sat", 85);
+//
+//        editor.commit();
 
         if (savedInstanceState!=null)
         {
@@ -65,6 +89,18 @@ public class DashboardDay extends SlidingMenuActivity {
         img.setImageDrawable(new RoundedAvatarDrawable(bmp));
 
     }
+
+//    public void resetData(SharedPreferences data) {
+//        SharedPreferences.Editor editor = data.edit();
+//        editor.putInt("Sun", 0);
+//        editor.putInt("Mon", 0);
+//        editor.putInt("Tue", 0);
+//        editor.putInt("Wed", 0);
+//        editor.putInt("Thu", 0);
+//        editor.putInt("Fri", 0);
+//        editor.putInt("Sat", 0);
+//        editor.commit();
+//    }
 
     public void toDashboardDay(View v) {
         Intent next = new Intent(this, DashboardDay.class);
