@@ -25,10 +25,60 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/teeth_dirty">
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/teeth_image_dirty"
+            android:src="@drawable/teeth_dirty_s" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teeth_image_clean_top"
+                    android:src="@drawable/teeth_clean_top"
+                    android:adjustViewBounds="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teeth_image_clean_bot"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/teeth_clean_bot"
+                    android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
     </RelativeLayout>
+
+
+
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -143,12 +193,12 @@
 
 
     <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
-        <!--android:text="Large Text"-->
-        <!--android:id="@+id/acce"-->
-        <!--android:layout_below="@+id/timer"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_marginTop="25dp" />-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--android:text="Large Text"-->
+    <!--android:id="@+id/acce"-->
+    <!--android:layout_below="@+id/timer"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="25dp" />-->
 </RelativeLayout>
