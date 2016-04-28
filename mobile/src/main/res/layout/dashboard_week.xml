@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="javis.wearsyncservice.DashboardWeek"
+    android:id="@+id/dashboard_week_rel">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/buchanan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="edu.berkeley.cs160.trial.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/daisy"></RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="92dp"
+            android:id="@+id/panel"
+            android:src="@drawable/circlepanel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:id="@+id/cropped_final"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_marginRight="239dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="has brushed his teeth once today."
+            android:id="@+id/pic_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:textSize="14dp"
+            android:layout_alignLeft="@+id/cropped_final"
+            android:textColor="@color/darkGrey"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANDREW"
+            android:id="@+id/Name"
+            android:layout_alignParentTop="false"
+            android:layout_alignStart="@+id/pic_text"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/darkGrey"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_alignParentEnd="false"
+            android:layout_marginRight="140dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/week_rel"
+            android:layout_below="@+id/cropped_final">
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
