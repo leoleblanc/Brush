@@ -3,6 +3,7 @@ package javis.wearsyncservice;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +17,7 @@ import java.util.HashMap;
 public class NotificationView extends AppCompatActivity {
 
     String ALARM_TAG = "ALARM";
+    String NOTIFICATIONS = "notifications";
     AlarmManager alarmManager;
     private static NotificationView inst;
     private RecyclerView mRecyclerView;
@@ -46,11 +48,15 @@ public class NotificationView extends AppCompatActivity {
             }
         });
 
-        String data = DataHolder.getInstance().getData();
-        if (data != null) {
-            inflateViews(data);
+        SharedPreferences accessor = getSharedPreferences(NOTIFICATIONS, MODE_PRIVATE);
+        String notification_data =  accessor.getString("notification_data", null);
+//        String notification_data = DataHolder.getInstance().getData();
+
+
+        if (notification_data != null) {
+            inflateViews(notification_data);
         }
-        Log.d("notif_data", "data = " + data);
+        Log.d("NotifView", "data from SP = " + notification_data);
     }
 
     public void newNotification() {

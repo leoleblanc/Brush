@@ -60,7 +60,7 @@
         <activity android:name=".updatedDashboardHome" />
 
         <activity android:name=".NotificationsSet"
-            android:label="@string/app_name"
+            android:label="@string/notification_title"
             android:theme="@style/Theme.AppCompat.Light">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -154,7 +154,7 @@
 
         <activity
             android:name=".NotificationView"
-            android:label="@string/title_activity_notification_view"
+            android:label="@string/notification_title"
             android:theme="@style/Theme.AppCompat.Light"></activity>
 
         <activity android:name=".CustomDialog"

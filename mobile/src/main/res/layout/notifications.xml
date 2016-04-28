@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="wrap_content"
     android:id="@+id/hidden_notifs"
-    android:layout_margin="10dp"
+    android:layout_marginTop="10dp"
+    android:padding="15dp"
     android:background="@color/white">
 
     <TextView
@@ -19,8 +20,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/alarm_time"
-        android:text="Morning"
-        android:paddingLeft="10dp"/>
+        android:text="Morning"/>
+        <!--android:paddingLeft="10dp"/>-->
 
     <!--<ToggleButton-->
         <!--android:layout_width="87dp"-->

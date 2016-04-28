@@ -4,36 +4,23 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin">
+    android:paddingTop="@dimen/activity_vertical_margin">
 
     <TimePicker
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/alarmTimePicker"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="@null"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text=""
-        android:id="@+id/alarmText"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/alarmTimePicker" />
+        android:background="@color/white"
+        android:timePickerMode="spinner"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/alarmTimePicker"
         android:background="@color/white"
-        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/repeat_layout">
 
         <TextView
@@ -41,43 +28,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="repeat"
+            android:layout_centerVertical="true"
             android:layout_weight="1"
             android:layout_gravity="left"
-            android:layout_alignBottom="@+id/repeat_switch"
-            android:layout_alignParentStart="true" />
-
+            android:layout_alignParentStart="true"
+            android:paddingLeft="16dp"/>
             />
-        <!--<ToggleButton-->
-        <!--android:layout_width="87dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:id="@+id/repeat_toggle"-->
-        <!--android:onClick="onToggleClicked"-->
-        <!--android:layout_alignParentRight="true" />-->
 
 
         <Switch
-            android:layout_width="50dp"
+            android:layout_width="100dp"
             android:layout_height="50dp"
             android:id="@+id/repeat_switch"
+            android:paddingRight="16dp"
             android:layout_alignParentRight="true"/>
 
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_below="@+id/repeat_layout"
         android:background="@color/white"
-        android:layout_margin="10dp">
+        android:layout_marginTop="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/label_notif_text"
             android:layout_alignParentLeft="true"
-            android:layout_alignBottom="@+id/label_notif"
+            android:layout_centerVertical="true"
+            android:paddingLeft="16dp"
             android:text="label"
-            android:background="@null"
+
              />
 
         <EditText
@@ -86,10 +69,10 @@
             android:layout_height="wrap_content"
             android:text="alarm"
             android:layout_alignParentRight="true"
-            android:background="@null"/>
+            android:layout_centerVertical="true"
+            android:paddingRight="16dp"/>
 
     </RelativeLayout>
-
 
     <Button
         android:id="@+id/cancel_notif"
@@ -100,6 +83,7 @@
         android:layout_alignParentLeft="true"
         android:onClick="cancel"
         android:text="CANCEL"
+        android:padding="16dp"
         android:background="@null"/>
     <Button
         android:id="@+id/save_notif"
@@ -110,19 +94,9 @@
         android:layout_alignParentBottom="true"
         android:onClick="save"
         android:text="SAVE"
-        android:background="@null"/>
+        android:background="@null"
+        android:padding="16dp"
+        />
 
-</RelativeLayout>
+    </RelativeLayout>
 
-    <!--<LinearLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_below="@+id/alarmTimePicker"-->
-    <!--android:orientation="horizontal">-->
-    <!--<ToggleButton-->
-    <!--android:layout_width="87dp"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:text="Alarm On/Off"-->
-    <!--android:id="@+id/repeat_toggle"-->
-    <!--android:onClick="onToggleClicked"-->
-    <!--android:layout_gravity="right" />-->

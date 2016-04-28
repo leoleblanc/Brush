@@ -4,9 +4,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
@@ -14,7 +14,6 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TimePicker;
-import android.widget.ToggleButton;
 
 
 /**
@@ -22,13 +21,10 @@ import android.widget.ToggleButton;
  */
 public class NotificationsSet extends AppCompatActivity {
 
-    private RecyclerView mRecyclerView;
-
     private Switch mySwitch;
     private TimePicker alarmTimePicker;
-    private Boolean toggleStatus = false;
     private Boolean switcherStatus;
-    private ToggleButton mToggle;
+    String NOTIFICATIONS = "notifications";
 
 
     @Override
@@ -60,7 +56,6 @@ public class NotificationsSet extends AppCompatActivity {
         else {
             switcherStatus = false;
         }
-
    }
 
     @Override
@@ -74,19 +69,28 @@ public class NotificationsSet extends AppCompatActivity {
         startActivity(cancel);
     }
 
-    public void onToggleClicked(View v) {
-        toggleStatus = true;
-    }
     public void save(View v) {
         Intent save = new Intent(this, NotificationView.class);
         EditText editText = (EditText) findViewById(R.id.label_notif);
         String label = editText.getText().toString();
-        String data = alarmTimePicker.getCurrentHour() + "_" + alarmTimePicker.getCurrentMinute()
+        String new_data = alarmTimePicker.getCurrentHour() + "_" + alarmTimePicker.getCurrentMinute()
                 + "_" + switcherStatus.toString() + "_" + label;
-        Log.d("Notif Save", "data = " + data);
+        Log.d("Notif Save", "data before = " + new_data);
 
 
-        DataHolder.getInstance().setData(data);// Temporary TODO change to SharedPreferences
+        SharedPreferences accessor = getSharedPreferences(NOTIFICATIONS, MODE_PRIVATE);
+        SharedPreferences.Editor editor = getSharedPreferences(NOTIFICATIONS, MODE_PRIVATE).edit();
+
+        //Set the number of notifications
+        String notification_data =  accessor.getString("notification_data", null);
+        if (notification_data != null) {
+            new_data = notification_data + "__" + new_data;
+        }
+        Log.d("SharedPref", "Data adding to SP = " + new_data);
+        editor.putString("notification_data", new_data);
+        editor.commit();
+
+//        DataHolder.getInstance().setData(data);// Temporary TODO change to SharedPreferences
         startActivity(save);
     }
 
