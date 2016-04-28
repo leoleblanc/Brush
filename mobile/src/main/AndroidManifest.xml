@@ -42,13 +42,11 @@
         <activity
             android:name=".signUpBrush"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-
-            <!-- <activity android:name=".signUpBrush"> -->
-            <intent-filter> <!-- THE CORRCET FIRST SCREEN!!! -->
+            <!--<intent-filter> &lt;!&ndash; THE CORRCET FIRST SCREEN!!! &ndash;&gt;
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity android:name=".signUpWithInfoName" />
         <activity android:name=".toSignUpWithInfoAge" />
@@ -61,9 +59,25 @@
         <activity android:name=".settings" />
         <activity android:name=".simplePlot" />
         <activity android:name=".pictureSelect" />
-        <activity android:name=".childQuestionsPink" />
-        <activity android:name=".childQuestionsOrange" />
-        <activity android:name=".childQuestionsBlue" />
+        <activity android:name=".childQuestionsPink"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".childQuestionsOrange"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".childQuestionsBlue"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".ColouredQActivity">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
         <activity
             android:name=".DashboardDay"
             android:label="Dashboard"
