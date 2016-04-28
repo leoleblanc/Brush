@@ -29,7 +29,6 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     static AlarmManager alarmManager;
 
 
-
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public TextView mTimeView;
         public TextView mLabelView;
@@ -48,6 +47,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
                 public void onCheckedChanged(CompoundButton buttonView,
                                              boolean isChecked) {
                     int i = getAdapterPosition();
+                    Log.d("Adapter", "pos = " + i);
                     if (isChecked) {
                         Log.d("Adapter Notif", "This alarm is on!");
                         String[] vals = mDataset[i].split("_");
@@ -60,8 +60,8 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
 
                         pendingIntents.put(i, pendingIntent);
 
-                        alarmManager
-                                .set(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent);
+                        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
+                                1000 * 60 * 1440, pendingIntent);
 
                     } else {
                         Log.d("Adapter Notif", "Canceling Alarm");
@@ -99,34 +99,32 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         int hour = Integer.parseInt(values[0]);
         int min = Integer.parseInt(values[1]);
 
+        Log.d("Adapter ", "time = " + hour + "" + min);
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.HOUR_OF_DAY, hour);
         calendar.set(Calendar.MINUTE, min);
 
         DateFormat df = new SimpleDateFormat("h:mm a");
-        String time = df.format(calendar.getInstance().getTime());
+        String time = df.format(calendar.getTime());
 
         // label
         String label = values[3];
 
+        Log.d("Adapter", "Time = " + time);
         holder.mTimeView.setText(time);
         holder.mLabelView.setText(label);
         if (holder.mSwitch.isChecked()) {
             Log.d("Notif Alarm", "Alarm is on");
             // Do alarm stuff
-
-            Intent myIntent = new Intent(holder.mSwitch.getContext(), AlarmReceiver.class); // Alarm managers notifies AlarmReciever
-            PendingIntent pendingIntent = PendingIntent.getBroadcast(holder.mSwitch.getContext(), 0, myIntent, 0);
-            pendingIntents.put(position, pendingIntent);
-
-//            alarmManager.set(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent);
-
-            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
-                    1000 * 60 * 5, pendingIntent); //every 5 minutes
+            if (!pendingIntents.containsKey(position)) { // so as to not make duplicate intents
+                Intent myIntent = new Intent(holder.mSwitch.getContext(), AlarmReceiver.class); // Alarm managers notifies AlarmReciever
+                PendingIntent pendingIntent = PendingIntent.getBroadcast(holder.mSwitch.getContext(), 0, myIntent, 0);
+                pendingIntents.put(position, pendingIntent);
+                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
+                        1000 * 60 * 1440, pendingIntent); //every
+            }
         } else {
-
-//            setAlarmText("");
-            Log.d("MyActivity", "Alarm Off");
+            Log.d("MyActivity", "Alarm Off");// Alarm not previously set so dont need to delete it
         }
     }
 

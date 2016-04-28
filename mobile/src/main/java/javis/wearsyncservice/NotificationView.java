@@ -53,35 +53,6 @@ public class NotificationView extends AppCompatActivity {
         Log.d("notif_data", "data = " + data);
     }
 
-////TODO delete ToggleClicked
-//    public void onToggleClicked(View view) { // TODO Move this to NotifViewActivity
-////    public void onSave(View view) {
-//        Log.d(ALARM_TAG, "Toggle button selected");
-//        if (((ToggleButton) view).isChecked()) {
-//            Log.d("MyActivity", "Alarm On");
-//            Calendar calendar = Calendar.getInstance();
-//            calendar.set(Calendar.HOUR_OF_DAY, alarmTimePicker.getCurrentHour());
-//            calendar.set(Calendar.MINUTE, alarmTimePicker.getCurrentMinute());
-//            Intent myIntent = new Intent(NotificationView.this, AlarmReceiver.class); // Alarm managers notifies AlarmReciever
-//            pendingIntent = PendingIntent.getBroadcast(NotificationView.this, 0, myIntent, 0);
-//            alarmManager.set(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent);
-//
-////
-////            DateFormat df = new SimpleDateFormat("h:mm a");
-////            String date = df.format(Calendar.getInstance().getTime());
-////            Log.d(ALARM_TAG, "Actual Time = " + date);
-//        } else {
-//            alarmManager.cancel(pendingIntent);
-//            setAlarmText("");
-//            Log.d("MyActivity", "Alarm Off");
-//        }
-//    }
-
-//    public void setAlarmText(String alarmText) {
-//        alarmTextView.setText(alarmText);
-//    }
-//    // END ALARM STUFF
-
     public void newNotification() {
         Intent newAlarm = new Intent(this, NotificationsSet.class);
         startActivity(newAlarm);
@@ -91,14 +62,6 @@ public class NotificationView extends AppCompatActivity {
         String[] notifs = data.split("__"); // 2 underscores "_" separate notification information
         mAdapter = new NotificationAdapter(notifs, this);
         mRecyclerView.setAdapter(mAdapter);
-    }
-
-    public void addPendingAlarm(int position, PendingIntent pIntent) {
-        pendingAlarms.put(position, pIntent);
-    }
-
-    public  PendingIntent getPendingAlarm(int position) {
-        return pendingAlarms.get(position);
     }
 
 
