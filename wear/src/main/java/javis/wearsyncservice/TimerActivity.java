@@ -4,12 +4,16 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Vibrator;
 import android.support.wearable.activity.WearableActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -22,13 +26,16 @@ public class TimerActivity extends WearableActivity {
     private RelativeLayout mSideView;
     private TextView mSideViewText;
     private RelativeLayout mClean;
+    private ImageView mTopTeeth;
+    private ImageView mBotTeeth;
 
 
     private TextView mAcce;
     private MyReceiver myReceiver;
     private float speed;
     private RelativeLayout mRelativeLayout;
-    final int defaultBrushingTime = 149;
+    final int defaultBrushingTime = 120;
+    final int interval = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +50,9 @@ public class TimerActivity extends WearableActivity {
         mSideViewText = (TextView) findViewById(R.id.brushside_text);
         mClean = (RelativeLayout) findViewById(R.id.clean);
         mRelativeLayout = (RelativeLayout) findViewById(R.id.back);
+
+        mTopTeeth = (ImageView) findViewById(R.id.teeth_image_clean_top);
+        mBotTeeth = (ImageView) findViewById(R.id.teeth_image_clean_bot);
 
         final Vibrator vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
         vibrator.vibrate(500);
@@ -62,19 +72,99 @@ public class TimerActivity extends WearableActivity {
         startService(accIntent);
 
 
-        // Start the timer
-        CountDownTimer timer = new CountDownTimer(defaultBrushingTime * 1000, 1000) {
+        Drawable drawableTop = getResources().getDrawable(R.drawable.teeth_clean_top);
+        Drawable drawableBot = getResources().getDrawable(R.drawable.teeth_clean_bot);
+        final Bitmap mBitTop = ((BitmapDrawable) drawableTop).getBitmap();
+        final Bitmap mBitBot = ((BitmapDrawable) drawableBot).getBitmap();
+        final int xwidth = mBitTop.getWidth();
+        final int xheight = mBitTop.getHeight();
 
-            int timertime = defaultBrushingTime * 1000;
+
+
+
+        // Start the timer
+        CountDownTimer timer = new CountDownTimer(defaultBrushingTime * 1000 + 5000, 1000) {
+
+            final int initialTime = defaultBrushingTime * 1000;
+            final int t = (initialTime - (16*1000*interval))/12;
+            final long intervalLong = interval*1000;
             long last_stop = defaultBrushingTime * 1000;
             boolean doCount = false;
 
+            private int redCount = 0;
+            private int redTime = 0;
+
+
+
+            public void changeScreen(long millisUntilFinished) {
+
+                if (millisUntilFinished < 5000 && millisUntilFinished <= 6000){
+                    mClean.setVisibility(View.VISIBLE);
+                    vibrator.vibrate(500);
+                    return;
+                }
+
+
+
+                int quad = (int) ((millisUntilFinished - 5000) * 4 / initialTime);
+                long pos = millisUntilFinished - 5000 - (quad * initialTime / 4);
+                Log.d("TAG", pos + " " + quad + " " + millisUntilFinished + " " + initialTime);
+
+
+
+                if (t <= pos && pos < t + intervalLong) {
+                    Log.d("TAG", "pos3");
+                    mTimerTextView.setVisibility(View.INVISIBLE);
+                    mHorizontalView.setVisibility(View.VISIBLE);
+                } else if (t*2 + intervalLong <= pos && pos < t*2 + intervalLong*2) {
+                    Log.d("TAG", "pos2");
+
+                    mTimerTextView.setVisibility(View.INVISIBLE);
+                    mVerticalView.setVisibility(View.VISIBLE);
+                } else if (t*3 + intervalLong*2 <= pos && pos < t*3 + intervalLong*3) {
+                    Log.d("TAG", "pos1");
+
+                    mSideView.setVisibility(View.INVISIBLE);
+                    mCircularView.setVisibility(View.VISIBLE);
+                } else if (t*3 + intervalLong *3 <= pos || pos == 0) {
+                    if (quad == 0) {
+                        Log.d("TAG", "quad0");
+                        mSideViewText.setText("top left");
+                    } else if (quad == 1) {
+                        Log.d("TAG", "quad1");
+                        mSideViewText.setText("bottom left");
+                    } else if (quad == 2) {
+                        Log.d("TAG", "quad2");
+                        mSideViewText.setText("top right");
+                    } else {
+                        Log.d("TAG", "quad3");
+                        mSideViewText.setText("bottom right");
+                    }
+                    mTimerTextView.setVisibility(View.INVISIBLE);
+                    mSideView.setVisibility(View.VISIBLE);
+                } else {
+                    Log.d("TAG", "timer");
+                    mTimerTextView.setText(millisToString(millisUntilFinished, -5));
+                    mHorizontalView.setVisibility(View.INVISIBLE);
+                    mVerticalView.setVisibility(View.INVISIBLE);
+                    mCircularView.setVisibility(View.INVISIBLE);
+                    mTimerTextView.setVisibility(View.VISIBLE);
+                }
+            }
+
+
             public void onTick(long millisUntilFinished) {
-                mTimerTextView.setText(millisToString(millisUntilFinished, timertime*3));
+
+                // color code
+                mTimerTextView.setText(millisToString(millisUntilFinished, initialTime*3));
                 if (speed < 25) {
                     if (doCount) {
                         if (last_stop - millisUntilFinished > 5000) {
                             mRelativeLayout.setBackgroundColor(0xffeb5757);
+                            redTime += 1;
+                            if (last_stop - millisUntilFinished <= 6000) {
+                                redCount += 1;
+                            }
                         }
                     } else {
                         doCount = true;
@@ -85,57 +175,87 @@ public class TimerActivity extends WearableActivity {
                     doCount = false;
                 }
 
-                if (millisUntilFinished > 146000) {
-                    mSideViewText.setText("top left");
-                    mTimerTextView.setVisibility(View.INVISIBLE);
-                    mSideView.setVisibility(View.VISIBLE);
-                } else if (millisUntilFinished > 143000) {
-                    mSideView.setVisibility(View.INVISIBLE);
-                    mCircularView.setVisibility(View.VISIBLE);
-                } else if (millisUntilFinished > 113000) {
-                    mTimerTextView.setText(millisToString(millisUntilFinished, -3*6-5));
-                    mCircularView.setVisibility(View.INVISIBLE);
-                    mTimerTextView.setVisibility(View.VISIBLE);
 
-                } else if (millisUntilFinished > 110000) {
-                    mSideViewText.setText("top right");
-                    mTimerTextView.setVisibility(View.INVISIBLE);
-                    mSideView.setVisibility(View.VISIBLE);
-                } else if (millisUntilFinished > 107000) {
-                    mSideView.setVisibility(View.INVISIBLE);
-                    mVerticalView.setVisibility(View.VISIBLE);
-                } else if (millisUntilFinished > 77000) {
-                    mTimerTextView.setText(millisToString(millisUntilFinished, -2*6-5));
-                    mVerticalView.setVisibility(View.INVISIBLE);
-                    mTimerTextView.setVisibility(View.VISIBLE);
+                // Watch animation
+                if (millisUntilFinished-5000 >= initialTime/2) {
+                    int x = ((int)(xwidth*(millisUntilFinished-5000-initialTime/2)/(initialTime/2)));
+                    if (x >= xwidth) {
+                        x = xwidth - 1;
+                    }
 
-                } else if (millisUntilFinished > 74000) {
-                    mSideViewText.setText("bottom left");
-                    mTimerTextView.setVisibility(View.INVISIBLE);
-                    mSideView.setVisibility(View.VISIBLE);
-                } else if (millisUntilFinished > 71000) {
-                    mSideView.setVisibility(View.INVISIBLE);
-                    mHorizontalView.setVisibility(View.VISIBLE);
-                } else if (millisUntilFinished > 41000) {
-                    mTimerTextView.setText(millisToString(millisUntilFinished, -1*6-5));
-                    mHorizontalView.setVisibility(View.INVISIBLE);
-                    mTimerTextView.setVisibility(View.VISIBLE);
+                    Bitmap topImg = Bitmap.createBitmap(mBitTop, x, 0, xwidth-x, xheight);
+                    Bitmap botImg = Bitmap.createBitmap(mBitBot, 0, 0, 1, xheight);
 
-                } else if (millisUntilFinished > 38000) {
-                    mSideViewText.setText("bottom right");
-                    mTimerTextView.setVisibility(View.INVISIBLE);
-                    mSideView.setVisibility(View.VISIBLE);
-                } else if (millisUntilFinished > 35000) {
-                    mSideView.setVisibility(View.INVISIBLE);
-                    mCircularView.setVisibility(View.VISIBLE);
-                } else if (millisUntilFinished > 5000) {
-                    mTimerTextView.setText(millisToString(millisUntilFinished, -5));
-                    mCircularView.setVisibility(View.INVISIBLE);
-                    mTimerTextView.setVisibility(View.VISIBLE);
-                } else if (millisUntilFinished > 4000){
-                    mClean.setVisibility(View.VISIBLE);
-                    vibrator.vibrate(500);
+                    mTopTeeth.setImageDrawable(new BitmapDrawable(topImg));
+                    mTopTeeth.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+                    mBotTeeth.setImageDrawable(new BitmapDrawable(botImg));
+                    mBotTeeth.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+                } else if (millisUntilFinished > 5000){
+                    int x = ((int)(xwidth*(millisUntilFinished-5000)/(initialTime/2)));
+                    if (x >= xwidth) {
+                        x = xwidth - 1;
+                    }
+
+                    Bitmap botImg = Bitmap.createBitmap(mBitBot, 0, 0, xwidth-x, xheight);
+
+                    mBotTeeth.setImageDrawable(new BitmapDrawable(botImg));
+                    mBotTeeth.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
                 }
+
+
+                // screen
+                changeScreen(millisUntilFinished);
+
+//                if (millisUntilFinished > 146000) {
+//                    mSideViewText.setText("top left");
+//                    mTimerTextView.setVisibility(View.INVISIBLE);
+//                    mSideView.setVisibility(View.VISIBLE);
+//                } else if (millisUntilFinished > 143000) {
+//                    mSideView.setVisibility(View.INVISIBLE);
+//                    mCircularView.setVisibility(View.VISIBLE);
+//                } else if (millisUntilFinished > 113000) {
+//                    mTimerTextView.setText(millisToString(millisUntilFinished, -3*6-5));
+//                    mCircularView.setVisibility(View.INVISIBLE);
+//                    mTimerTextView.setVisibility(View.VISIBLE);
+//                } else if (millisUntilFinished > 110000) {
+//                    mSideViewText.setText("top right");
+//                    mTimerTextView.setVisibility(View.INVISIBLE);
+//                    mSideView.setVisibility(View.VISIBLE);
+//                } else if (millisUntilFinished > 107000) {
+//                    mSideView.setVisibility(View.INVISIBLE);
+//                    mVerticalView.setVisibility(View.VISIBLE);
+//                } else if (millisUntilFinished > 77000) {
+//                    mTimerTextView.setText(millisToString(millisUntilFinished, -2*6-5));
+//                    mVerticalView.setVisibility(View.INVISIBLE);
+//                    mTimerTextView.setVisibility(View.VISIBLE);
+//
+//                } else if (millisUntilFinished > 74000) {
+//                    mSideViewText.setText("bottom left");
+//                    mTimerTextView.setVisibility(View.INVISIBLE);
+//                    mSideView.setVisibility(View.VISIBLE);
+//                } else if (millisUntilFinished > 71000) {
+//                    mSideView.setVisibility(View.INVISIBLE);
+//                    mHorizontalView.setVisibility(View.VISIBLE);
+//                } else if (millisUntilFinished > 41000) {
+//                    mTimerTextView.setText(millisToString(millisUntilFinished, -1*6-5));
+//                    mHorizontalView.setVisibility(View.INVISIBLE);
+//                    mTimerTextView.setVisibility(View.VISIBLE);
+//
+//                } else if (millisUntilFinished > 38000) {
+//                    mSideViewText.setText("bottom right");
+//                    mTimerTextView.setVisibility(View.INVISIBLE);
+//                    mSideView.setVisibility(View.VISIBLE);
+//                } else if (millisUntilFinished > 35000) {
+//                    mSideView.setVisibility(View.INVISIBLE);
+//                    mCircularView.setVisibility(View.VISIBLE);
+//                } else if (millisUntilFinished > 5000) {
+//                    mTimerTextView.setText(millisToString(millisUntilFinished, -5));
+//                    mCircularView.setVisibility(View.INVISIBLE);
+//                    mTimerTextView.setVisibility(View.VISIBLE);
+//                } else if (millisUntilFinished > 4000){
+//                    mClean.setVisibility(View.VISIBLE);
+//                    vibrator.vibrate(500);
+//                }
             }
 
             private String millisToString(long millisUntilFinished, int adjustment) {
@@ -144,13 +264,17 @@ public class TimerActivity extends WearableActivity {
 //                return Integer.toString(seconds) + " raw:" + Integer.toString((int) millisUntilFinished / 1000);
 
                 seconds = seconds - minutes * 60;
-                return Integer.toString(minutes) + ":" + Integer.toString(seconds);
+                if (seconds <= 0) {
+                    return "0:00";
+                }
+                return Integer.toString(minutes) + ":" + String.format("%02d", seconds);
             }
 
             public void onFinish() {
                 Intent i = new Intent(TimerActivity.this, ResultActivity.class);
+                i.putExtra("REDCOUNT", redCount);
+                i.putExtra("REDTIME", redTime);
                 startActivity(i);
-
             }
         };
         timer.start();
@@ -171,16 +295,9 @@ public class TimerActivity extends WearableActivity {
         @Override
         public void onReceive(Context arg0, Intent arg1) {
 
-            Log.d("TimerActivity", "Received something");
             String acc = arg1.getStringExtra("ACCE");
             speed = Float.parseFloat(acc);
             Log.d("TimerActivity", acc);
-            if (mAcce != null){
-                mAcce.setText(acc);
-            } else {
-                Log.d("TimerActivity", "mACCE is null");
-            }
-
         }
 
     }

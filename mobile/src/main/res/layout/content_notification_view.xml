@@ -10,13 +10,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="javis.wearsyncservice.NotificationView"
-    tools:showIn="@layout/activity_notification_view">
+    tools:showIn="@layout/activity_notification_view"
+    android:id="@+id/notif_view_main_layout">
 
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Alarm On/Off"
-        android:id="@+id/alarmToggle"
-        android:layout_centerHorizontal="true"
-        android:onClick="onToggleClicked" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/notification_list"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 </RelativeLayout>

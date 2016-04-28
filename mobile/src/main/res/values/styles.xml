@@ -13,12 +13,12 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="QueryTheme" parent="@style/Theme.AppCompat"/>
-    <style name="Base.AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Base.AppTheme" parent="Theme.AppCompat.Light"/>
+     />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
         <item name="android:actionBarStyle">@style/ActionBar</item>
     </style>
 
@@ -32,6 +32,17 @@
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="FoxDialogueTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackground">@color/transparent</item>
+
+    </style>
+
+    <style name="brushTheme" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorAccent">@color/purple</item>
     </style>
 
 </resources>

@@ -41,8 +41,23 @@ public class DashboardDay extends AppCompatActivity {
         startActivity(next);
     }
 //
-    public void sendWatchMessage(View v) {
+    public void sendWatchMessage(View v)
+    /**
+     * Called onClick of the Send Message button
+     */
+    {
         Intent next = new Intent(this, NotificationView.class);
-        startActivity(next);
+        startActivity(next); // ASHLEY - FOR TESTING
+
+        /*final Dialog d = new Dialog(this,android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);
+        d.setContentView(R.layout.custom_dialog);
+        d.setCanceledOnTouchOutside(true);
+        d.setCancelable(true);
+        d.getWindow().setLayout(400,400);
+        d.show();*/
+
+//        Intent i = new Intent(this, CustomDialog.class);
+//        startActivity(i); // CORRECT FLOW
+
     }
 }
