@@ -65,7 +65,7 @@ public class CircCropActivity extends Activity {
         //ADDED
         WindowManager.LayoutParams params = getWindow().getAttributes();
         //params.x = -100;
-        params.height = 1000;
+        params.height = 1050;
         params.width = 700;
         //params.y = -50;
         this.getWindow().setAttributes(params);
@@ -77,6 +77,8 @@ public class CircCropActivity extends Activity {
      */
     public void onLoadImageClick(View view) {
         //TODO: Remove the backgound blank person image
+        CropImageView img = (CropImageView)findViewById(R.id.CropImageView);
+        img.setBackgroundColor(getResources().getColor(R.color.transparent));
         startActivityForResult(CropImageHelper.getPickImageChooserIntent(this), 200);
     //Second argument used to be 200
     }

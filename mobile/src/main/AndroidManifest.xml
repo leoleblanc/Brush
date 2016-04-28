@@ -61,11 +61,11 @@
         <activity android:name=".pictureSelect" />
         <activity android:name=".childQuestionsPink"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <intent-filter>
+       <!-- <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+        </intent-filter>-->
         </activity>
         <activity android:name=".childQuestionsOrange"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
@@ -115,7 +115,7 @@
         <!-- </activity> -->
         <activity
             android:name=".CircCropActivity"
-            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar">
+            android:theme="@style/FoxDialogueTheme">
 
             <!--
              <intent-filter>
@@ -137,13 +137,11 @@
         </activity>
         <activity android:name=".CircCropImplementation">
 
-            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            -->
         </activity>
 
         <service android:name=".PhoneWearableListenerService">

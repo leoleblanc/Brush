@@ -26,15 +26,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/pink">
+    android:background="@drawable/foxdialog">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Load Image"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:layout_gravity="center_horizontal"
-        android:onClick="onLoadImageClick"/>
+        android:layout_gravity="center"
+        android:onClick="onLoadImageClick"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/roundbutton"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
 
     <!-- <ImageView
          android:layout_width="100dp"
@@ -45,23 +49,29 @@
 
     <com.theartofdev.edmodo.cropper.CropImageView
         android:id="@+id/CropImageView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/blankphoto"
-        app:cropScaleType="fitCenter"/>
+        app:cropScaleType="fitCenter"
+        android:layout_gravity="center" />
 
     <!--the layout width if the edmodo cropeer used to be android:layout_width="match_parent"-->
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/activity_horizontal_margin"
         android:text="Crop Image"
-        android:onClick="onCropImageClick"/>
+        android:onClick="onCropImageClick"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/roundbutton"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp" />
 
 </LinearLayout>
