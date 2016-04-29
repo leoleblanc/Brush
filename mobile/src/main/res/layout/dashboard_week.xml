@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="javis.wearsyncservice.DashboardWeek"
     android:id="@+id/dashboard_week_rel">
 
@@ -101,7 +97,37 @@
                 ap:graphMarginLeft="15dp"
                 ap:graphMarginRight="15dp"/>
         </LinearLayout>
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/period_nav_btns">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/dash_day_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DAY"
+                android:onClick="toDashboardDay"
+                android:background="@color/grey"
+                android:textColor="@color/white"
+                />
+            <Button
+                android:id="@+id/dash_week_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="WEEK"
+                android:onClick="toDashboardWeek"
+                android:textColor="@color/white"
+                android:background="@color/pink"
+                />
+        </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

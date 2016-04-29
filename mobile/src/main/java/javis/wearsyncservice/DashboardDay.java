@@ -1,25 +1,16 @@
 package javis.wearsyncservice;
 
-import android.app.Activity;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.preference.Preference;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
 import java.io.FileInputStream;
-import java.util.Calendar;
 
 /**
  * Created by Me on 4/19/16.
@@ -74,7 +65,7 @@ public class DashboardDay extends SlidingMenuActivity {
 
 
         this.setTitle("Dashboard");
-        String[] tempScores = {"86_60_40_70", "0_0_0_0"};
+        String[] tempScores = {"86_60_40_70", "4_0_50_43"};
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         mRecyclerView.setHasFixedSize(true);
 

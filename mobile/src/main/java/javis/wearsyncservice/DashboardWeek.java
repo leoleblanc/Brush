@@ -1,12 +1,13 @@
 package javis.wearsyncservice;
 
-import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.androidplot.xy.BoundaryMode;
@@ -195,5 +196,15 @@ public class DashboardWeek extends SlidingMenuActivity {
         //If there is no selected image displays the fox icon
         Bitmap Icon = BitmapFactory.decodeResource(getResources(), R.drawable.foxicon);
         return Icon;
+    }
+
+    public void toDashboardDay(View v) {
+        Intent next = new Intent(this, DashboardDay.class);
+        startActivity(next);
+    }
+
+    public void toDashboardWeek(View v) {
+        Intent next = new Intent(this, DashboardWeek.class);
+        startActivity(next);
     }
 }
