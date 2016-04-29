@@ -2,9 +2,11 @@ package javis.wearsyncservice;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -140,11 +142,32 @@ public class SlidingMenuActivity extends Activity {
         View header = getLayoutInflater().inflate(R.layout.header, null);
         mDrawerList.addHeaderView(header);
 
+        final Context mContext = this;
+
         mDrawerList.setAdapter(adapter);
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
+                /*switch(position)
+                {
+                    case 0: Log.d("BAZOOKA", "Pressed Dashboard");
+                        Intent i0 = new Intent(mContext, DashboardDay.class);
+                        i0.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(i0);
+                        break;
+                    case 1:Log.d("BAZOOKA", "Pressed Notifications");
+                        Intent i1 = new Intent(mContext, NotificationView.class);
+                        i1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(i1);
+                        break;
+                    case 2:Log.d("BAZOOKA", "Pressed Settings");
+                        Intent i2 = new Intent(mContext, settings.class);
+                        i2.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(i2);
+                        break;
+                }*/
+
                 /*switch (position) {
                     case 0:
                         mDrawerToggle.setAnimateEnabled(false);

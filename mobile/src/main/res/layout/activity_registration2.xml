@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/cropped_final"
         android:layout_alignLeft="@id/cropped_final"
-        android:background="@drawable/foxicon"
+        android:background="@drawable/purple_photo_icon"
         android:scaleType="fitXY"
         android:layout_marginTop="110dp"
         android:layout_marginLeft="120dp"
