@@ -9,6 +9,10 @@ import android.app.NotificationManager;
 import android.content.Intent;
 import android.util.Log;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 
 /* This class pretty much creates a notification once it is started.
 * Can replace this with Notification builder stuff maybe? */
@@ -21,6 +25,11 @@ public class AlarmService extends IntentService {
 
     @Override
     public void onHandleIntent(Intent intent) {
+        Calendar calendar = Calendar.getInstance();
+        DateFormat df = new SimpleDateFormat("h:mm a");
+        String time = df.format(calendar.getTime());
+        Log.d("Alarm service", "Time on the watch = " + time);
+
         sendNotification("Wake Up! Wake Up!");
     }
 
