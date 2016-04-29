@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="phonewatchlib.phonewatchlib">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/phonewatchlib/build/libs/phonewatchlib.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

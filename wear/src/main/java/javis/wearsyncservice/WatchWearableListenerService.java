@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.util.Log;
+import android.view.View;
 
 import com.example.PhoneWatchClass;
 import com.google.android.gms.wearable.MessageEvent;
@@ -25,7 +26,6 @@ public class WatchWearableListenerService extends WearableListenerService {
 
     @Override
     public void onMessageReceived(MessageEvent messageEvent) {
-        Log.d("Watch", "I got a message");
         if (messageEvent.getPath().equalsIgnoreCase(PhoneWatchClass.PHONE_TO_WATCH_MESSAGE_PATH)) {
             String receivedText = new String(messageEvent.getData());
             Context ct = getApplication();

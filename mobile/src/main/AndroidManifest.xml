@@ -39,7 +39,6 @@
             </intent-filter>
             -->
         </activity>
-
         <activity
             android:name=".signUpBrush"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
@@ -56,21 +55,7 @@
         <activity android:name=".updatedDashboard" />
         <activity android:name=".updatedDashboardGraph" />
         <activity android:name=".updatedDashboardHome" />
-
-        <activity android:name=".NotificationsSet"
-            android:label="@string/notification_title"
-            android:theme="@style/Theme.AppCompat.Light">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <service
-            android:name=".AlarmService"
-            android:enabled="true" />
-        <receiver android:name=".AlarmReceiver" />
-
-
+        <activity android:name=".notificationsSet" />
         <activity android:name=".settings" />
         <activity android:name=".simplePlot" />
         <activity android:name=".pictureSelect" />
@@ -97,7 +82,7 @@
             android:name=".DashboardDay"
             android:label="Dashboard"
             android:theme="@style/AppTheme" />
-
+        <!-- android:theme="@style/Theme.AppCompat" -->
         <activity android:name=".unupdatedDashboardGraph" />
         <activity android:name=".unupdatedDashboardHome" />
         <activity
@@ -167,14 +152,8 @@
 
         <activity
             android:name=".NotificationView"
-            android:label="@string/notification_title"
-            android:theme="@style/Theme.AppCompat.Light"></activity>
-
-        <activity android:name=".CustomDialog"
-            android:theme="@style/FoxDialogueTheme">
-
-        </activity>
-
+            android:label="@string/title_activity_notification_view"
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".CustomDialog"
             android:theme="@style/FoxDialogueTheme"></activity>
