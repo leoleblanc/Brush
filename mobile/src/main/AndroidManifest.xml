@@ -23,6 +23,10 @@
             android:name=".SendWatchMessageIntentService"
             android:exported="false" />
 
+        <service
+            android:name=".AlarmService"
+            android:enabled="true" />
+        <receiver android:name=".AlarmReceiver" />
         <!-- Change adjustNothing to adjustPan after you do the real layout -->
         <activity
             android:name=".SendMsgActivity"
@@ -55,7 +59,10 @@
         <activity android:name=".updatedDashboard" />
         <activity android:name=".updatedDashboardGraph" />
         <activity android:name=".updatedDashboardHome" />
-        <activity android:name=".NotificationsSet" />
+
+        <activity android:name=".NotificationsSet"
+            android:theme="@style/Theme.AppCompat.Light"/>
+
         <activity android:name=".settings" />
         <activity android:name=".simplePlot" />
         <activity android:name=".pictureSelect" />
@@ -137,11 +144,11 @@
         </activity>
         <activity android:name=".CircCropImplementation">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
 
         <service android:name=".PhoneWearableListenerService">
@@ -153,7 +160,14 @@
         <activity
             android:name=".NotificationView"
             android:label="@string/title_activity_notification_view"
-            android:theme="@style/Theme.AppCompat" />
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".CustomDialog"
             android:theme="@style/FoxDialogueTheme"></activity>

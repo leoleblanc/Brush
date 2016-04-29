@@ -60,7 +60,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
 
                         pendingIntents.put(i, pendingIntent);
 
-                        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
+                        alarmManager.setRepeating(AlarmManager.RTC, calendar.getTimeInMillis(),
                                 1000 * 60 * 1440, pendingIntent);
 
                     } else {
@@ -117,14 +117,16 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             Log.d("Notif Alarm", "Alarm is on");
             // Do alarm stuff
             if (!pendingIntents.containsKey(position)) { // so as to not make duplicate intents
+                Log.d("Adapter no", "This posistion");
                 Intent myIntent = new Intent(holder.mSwitch.getContext(), AlarmReceiver.class); // Alarm managers notifies AlarmReciever
                 PendingIntent pendingIntent = PendingIntent.getBroadcast(holder.mSwitch.getContext(), 0, myIntent, 0);
                 pendingIntents.put(position, pendingIntent);
-                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
-                        1000 * 60 * 1440, pendingIntent); //every
+                alarmManager.setRepeating(AlarmManager.RTC, calendar.getTimeInMillis(),
+                        1000 * 60 * 2, pendingIntent); //every 1440
             }
         } else {
             Log.d("MyActivity", "Alarm Off");// Alarm not previously set so dont need to delete it
+//            alarmManager.cancel(pendingIntent);
         }
     }
 
