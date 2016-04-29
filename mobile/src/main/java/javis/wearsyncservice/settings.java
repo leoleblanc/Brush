@@ -1,5 +1,6 @@
 package javis.wearsyncservice;
 
+import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class settings extends AppCompatActivity {
+public class settings extends Activity {
 
     final String SETTINGS_FILE = "BRUSH_SETTINGS";
     private SharedPreferences settings;
