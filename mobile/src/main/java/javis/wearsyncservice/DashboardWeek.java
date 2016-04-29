@@ -2,6 +2,7 @@ package javis.wearsyncservice;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -21,6 +22,7 @@ import java.text.FieldPosition;
 import java.text.Format;
 import java.text.ParsePosition;
 import java.util.Arrays;
+import java.util.Calendar;
 
 public class DashboardWeek extends SlidingMenuActivity {
 
@@ -29,6 +31,27 @@ public class DashboardWeek extends SlidingMenuActivity {
 
         //super.onCreate(savedInstanceState);
         //setContentView(R.layout.dashboard_week);
+        String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+
+        SharedPreferences data = getPreferences(0); //for storing data
+        SharedPreferences.Editor editor = data.edit(); //to edit data
+        //if day of the week is Sunday, reset the data for the week
+        Calendar c = Calendar.getInstance();
+        int val = c.get(Calendar.DAY_OF_WEEK);
+        String day = days[val];
+        if (day.equals("Sunday")) {
+            resetData(data);
+        }
+        //dummy data, get real data
+        editor.putInt("Sun", 90);
+        editor.putInt("Mon", 86);
+        editor.putInt("Tue", 85);
+        editor.putInt("Wed", 80);
+        editor.putInt("Thu", 75);
+        editor.putInt("Fri", 80);
+        editor.putInt("Sat", 85);
+
+        editor.apply();
 
         if (savedInstanceState!=null)
         {
@@ -63,20 +86,21 @@ public class DashboardWeek extends SlidingMenuActivity {
 
 
         //create array of y-values to plot
-        Number[] numbers = {20, 50, 80, 60, 75, 80, 90}; //index corresponds to x-value
+        Number[] scores = {data.getInt("Sun", 0), data.getInt("Mon", 0), data.getInt("Tue", 0), data.getInt("Wed", 0), data.getInt("Thu", 0), data.getInt("Fri", 0), data.getInt("Sat", 0)};
+//        Number[] numbers = {20, 50, 80, 60, 75, 80, 90}; //index corresponds to x-value
         //figure out how to write to memory
 
         mySimpleXYPlot.getGraphWidget().getBackgroundPaint().setColor(Color.rgb(155, 24, 155));// sets axis colors
         mySimpleXYPlot.getGraphWidget().getGridBackgroundPaint().setColor(Color.rgb(155, 24, 155)); //sets the graph background color
 
         // Domain
-        mySimpleXYPlot.setDomainStep(XYStepMode.INCREMENT_BY_VAL, numbers.length);
+        mySimpleXYPlot.setDomainStep(XYStepMode.INCREMENT_BY_VAL, scores.length);
         mySimpleXYPlot.setDomainValueFormat(new DecimalFormat("0"));
         mySimpleXYPlot.setDomainStepValue(1);
 
         //Range
         mySimpleXYPlot.setRangeBoundaries(0, 100, BoundaryMode.FIXED);
-        mySimpleXYPlot.setRangeStep(XYStepMode.INCREMENT_BY_VAL, numbers.length);
+        mySimpleXYPlot.setRangeStep(XYStepMode.INCREMENT_BY_VAL, scores.length);
         mySimpleXYPlot.setRangeStepValue(10);
         //mySimpleXYPlot.setRangeStep(XYStepMode.SUBDIVIDE, values.length);
         mySimpleXYPlot.setRangeValueFormat(new DecimalFormat("0"));
@@ -94,7 +118,7 @@ public class DashboardWeek extends SlidingMenuActivity {
 //                "Series1");                             // Set the display title of the series
 
         //turn above numbers to XYSeries
-        XYSeries series = new SimpleXYSeries(Arrays.asList(numbers), SimpleXYSeries.ArrayFormat.Y_VALS_ONLY, "Series");
+        XYSeries series = new SimpleXYSeries(Arrays.asList(scores), SimpleXYSeries.ArrayFormat.Y_VALS_ONLY, "Series");
 
         //create a formatter to use for drawing a series using LineAndPointRenderer
 
@@ -129,7 +153,7 @@ public class DashboardWeek extends SlidingMenuActivity {
 
     class GraphXLabelFormat extends Format {
 
-        String[] LABELS = {"Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"}; //set these to be days
+        String[] LABELS = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"}; //set these to be days
 
         @Override
         public StringBuffer format(Object object, StringBuffer buffer, FieldPosition field) {
@@ -143,6 +167,18 @@ public class DashboardWeek extends SlidingMenuActivity {
         public Object parseObject(String string, ParsePosition position) {
             return java.util.Arrays.asList(LABELS).indexOf(string);
         }
+    }
+
+    public void resetData(SharedPreferences data) {
+        SharedPreferences.Editor editor = data.edit();
+        editor.putInt("Sun", 0);
+        editor.putInt("Mon", 0);
+        editor.putInt("Tue", 0);
+        editor.putInt("Wed", 0);
+        editor.putInt("Thu", 0);
+        editor.putInt("Fri", 0);
+        editor.putInt("Sat", 0);
+        editor.apply();
     }
 
     public Bitmap getImageBitmap(Context context,String name,String extension){

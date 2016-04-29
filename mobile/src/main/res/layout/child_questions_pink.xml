@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/oldrose">
 
     <LinearLayout
@@ -48,20 +50,24 @@
             android:layout_marginTop="70dp">
 
              <android.support.design.widget.FloatingActionButton
-                android:src="@drawable/foxicon"
+                android:src="@drawable/tick"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                 android:layout_weight="1"
+                android:layout_height="100dp"
+                 android:layout_weight="0.90"
                  android:layout_marginRight="30dp"
-                 android:onClick="toChildQuestionsOrange" />
+                 android:onClick="toChildQuestionsOrange"
+                 app:backgroundTint="@color/oldrose"
+                 app:borderWidth="0dp"/>
 
              <android.support.design.widget.FloatingActionButton
-                android:src="@drawable/foxicon"
+                android:src="@drawable/cross"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                  android:layout_marginLeft="30dp"
-                 android:onClick="toChildQuestionsOrange" />
+                 android:onClick="toChildQuestionsOrange"
+                 app:backgroundTint="@color/oldrose"
+                 app:borderWidth="0dp" />
 
         </LinearLayout>
 
