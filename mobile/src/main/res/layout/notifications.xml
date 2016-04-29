@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/hidden_notifs"
+    android:layout_marginTop="10dp"
+    android:padding="15dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/alarm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14:00 AM"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/alarm_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/alarm_time"
+        android:text="Morning"/>
+    <!--android:paddingLeft="10dp"/>-->
+
+    <!--<ToggleButton-->
+    <!--android:layout_width="87dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/alarm_switch"-->
+    <!--android:onClick="onToggleClicked"-->
+    <!--android:layout_alignParentRight="true" />-->
+    <Switch
+        android:id="@+id/alarm_switch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:checked="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        />
+    <!-- -->
+
+</RelativeLayout>
