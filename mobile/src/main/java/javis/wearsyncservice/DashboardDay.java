@@ -2,6 +2,7 @@ package javis.wearsyncservice;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -65,6 +66,20 @@ public class DashboardDay extends SlidingMenuActivity {
 
 
         this.setTitle("Dashboard");
+        SharedPreferences accessor = getSharedPreferences("WATCHSCORES", MODE_PRIVATE);
+        SharedPreferences.Editor editor = getSharedPreferences("WATCHSCORES", MODE_PRIVATE).edit();
+
+        //Set the number of notifications
+        String score_data =  accessor.getString("SCOREDATA", null);
+//        if (notification_data != null) {
+//            new_data = notification_data + "__" + new_data;
+//        }
+//        Log.d("SharedPref", "Data adding to SP = " + new_data);
+//        editor.putString("notification_data", new_data);
+//        editor.commit();
+
+
+
         String[] tempScores = {"86_60_40_70", "4_0_50_43"};
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         mRecyclerView.setHasFixedSize(true);

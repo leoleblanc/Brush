@@ -23,6 +23,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
         NotificationView inst = NotificationView.instance();
         Log.d("Alarm Reciever", "Alarm! Wake up! Wake up!");
 
+
         //this will send a notification message
         ComponentName comp = new ComponentName(context.getPackageName(),
                 AlarmService.class.getName());

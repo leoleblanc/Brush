@@ -65,13 +65,22 @@
             android:layout_alignParentEnd="false"
             android:layout_marginRight="140dp" />
     </RelativeLayout>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/my_recycler_view"
-        android:scrollbars="vertical"
+    <RelativeLayout
+        android:id="@+id/score_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buchanan"/>
+        android:layout_below="@id/buchanan"
+        android:paddingBottom="50dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -83,6 +92,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:id="@+id/dash_week_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="WEEK"
+            android:onClick="toDashboardWeek"
+            android:background="@color/grey"
+            android:textColor="@color/white"
+           />
+        <Button
             android:id="@+id/dash_day_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -92,17 +111,6 @@
             android:background="@color/pink"
             android:textColor="@color/white"
             />
-        <Button
-            android:id="@+id/dash_week_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-
-            android:text="WEEK"
-            android:onClick="toDashboardWeek"
-            android:background="@color/grey"
-            android:textColor="@color/white"
-           />
     </LinearLayout>
     </RelativeLayout>
 
