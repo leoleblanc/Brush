@@ -61,7 +61,10 @@ public class RegistrationActivity extends Activity {
         }
         catch(Exception e){
         }
-        return null;
+        //return null;
+        //If there is no selected image displays the fox icon
+        Bitmap Icon = BitmapFactory.decodeResource(getResources(), R.drawable.foxicon);
+        return Icon;
     }
 
 
