@@ -76,6 +76,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
+            android:paddingBottom="30dp"
             android:id="@+id/week_rel"
             android:layout_below="@+id/cropped_final">
 
@@ -109,16 +110,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <Button
-                android:id="@+id/dash_day_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="DAY"
-                android:onClick="toDashboardDay"
-                android:background="@color/grey"
-                android:textColor="@color/white"
-                />
-            <Button
                 android:id="@+id/dash_week_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -127,6 +118,16 @@
                 android:onClick="toDashboardWeek"
                 android:textColor="@color/white"
                 android:background="@color/pink"
+                />
+            <Button
+                android:id="@+id/dash_day_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DAY"
+                android:onClick="toDashboardDay"
+                android:background="@color/grey"
+                android:textColor="@color/white"
                 />
         </LinearLayout>
     </RelativeLayout>

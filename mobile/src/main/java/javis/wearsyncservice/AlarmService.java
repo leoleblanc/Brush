@@ -28,7 +28,7 @@ public class AlarmService extends IntentService {
         Log.d("AlarmService", "Preparing to send notification...: " + msg);
 
         Intent msgIntent = new Intent(this, SendWatchMessageIntentService.class);
-        msgIntent.putExtra(SendWatchMessageIntentService.INPUT_EXTRA, "MSG;" + "Its time to brush");
+        msgIntent.putExtra(SendWatchMessageIntentService.INPUT_EXTRA, "ALARM;" + " Its time to brush");
         startService(msgIntent);
         Log.d("AlarmService", "Notification sent.");
     }
