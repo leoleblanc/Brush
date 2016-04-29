@@ -23,10 +23,6 @@
             android:name=".SendWatchMessageIntentService"
             android:exported="false" />
 
-        <service
-            android:name=".AlarmService"
-            android:enabled="true" />
-        <receiver android:name=".AlarmReceiver" />
         <!-- Change adjustNothing to adjustPan after you do the real layout -->
         <activity
             android:name=".SendMsgActivity"
@@ -46,11 +42,14 @@
         <activity
             android:name=".signUpBrush"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-            <!--<intent-filter> &lt;!&ndash; THE CORRCET FIRST SCREEN!!! &ndash;&gt;
+
+            <!--
+            <intent-filter> &lt;!&ndash; THE CORRCET FIRST SCREEN!!! &ndash;&gt;
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
         <activity android:name=".signUpWithInfoName" />
         <activity android:name=".toSignUpWithInfoAge" />
@@ -59,48 +58,43 @@
         <activity android:name=".updatedDashboard" />
         <activity android:name=".updatedDashboardGraph" />
         <activity android:name=".updatedDashboardHome" />
-
-        <activity android:name=".NotificationsSet"
-            android:theme="@style/Theme.AppCompat.Light"/>
-
+        <activity android:name=".notificationsSet" />
         <activity android:name=".settings" />
         <activity android:name=".simplePlot" />
         <activity android:name=".pictureSelect" />
-        <activity android:name=".childQuestionsPink"
+        <activity
+            android:name=".childQuestionsPink"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-       <!-- <intent-filter>
+
+            <!--
+        <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>-->
+        </intent-filter>
+            -->
         </activity>
-        <activity android:name=".childQuestionsOrange"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".childQuestionsBlue"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".ColouredQActivity">
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
-        </activity>
-
         <activity
-            android:name=".DashboardDay"
-            android:label="Dashboard"
-            android:theme="@style/AppTheme">
+            android:name=".childQuestionsOrange"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".childQuestionsBlue"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ColouredQActivity">
+
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
-
-
+        <activity
+            android:name=".DashboardDay"
+            android:label="Dashboard"
+            android:theme="@style/AppTheme" />
         <!-- android:theme="@style/Theme.AppCompat" -->
-
-
         <activity android:name=".unupdatedDashboardGraph" />
         <activity android:name=".unupdatedDashboardHome" />
         <activity
@@ -155,11 +149,13 @@
         </activity>
         <activity android:name=".CircCropImplementation">
 
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
         </activity>
 
         <service android:name=".PhoneWearableListenerService">
@@ -171,14 +167,24 @@
         <activity
             android:name=".NotificationView"
             android:label="@string/title_activity_notification_view"
-            android:theme="@style/Theme.AppCompat.Light">
-
-        </activity>
-
+            android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".CustomDialog"
-            android:theme="@style/FoxDialogueTheme"></activity>
-        <activity android:name=".DashboardWeek"></activity>
+            android:theme="@style/FoxDialogueTheme" />
+        <activity android:name=".DashboardWeek" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Registration2Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>
