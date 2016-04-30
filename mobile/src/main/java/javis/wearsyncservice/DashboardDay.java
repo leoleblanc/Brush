@@ -31,13 +31,8 @@ public class DashboardDay extends SlidingMenuActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        /*super.onCreate(savedInstanceState);
-        setContentView(R.layout.dashboard_day);*/
-        getSettings = getSharedPreferences(SETTINGS_FILE, MODE_PRIVATE);
-        String name = getSettings.getString("FIRST_NAME", "No Name");
-        mainNameView = (TextView) findViewById(R.id.Name);
-        mainNameView.setText(name);
-
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.dashboard_day);
         String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 //
         SharedPreferences data = getSharedPreferences("SCORES", MODE_PRIVATE);
@@ -94,21 +89,14 @@ public class DashboardDay extends SlidingMenuActivity {
 
 
         this.setTitle("Dashboard");
-//        SharedPreferences accessor = getSharedPreferences("WATCHSCORES", MODE_PRIVATE);
-//        SharedPreferences.Editor editor = getSharedPreferences("WATCHSCORES", MODE_PRIVATE).edit();
-//
-//        //Set the number of notifications
-//        String score_data =  accessor.getString("SCOREDATA", null);
-////        if (notification_data != null) {
-////            new_data = notification_data + "__" + new_data;
-////        }
-////        Log.d("SharedPref", "Data adding to SP = " + new_data);
-////        editor.putString("notification_data", new_data);
-//        editor.commit();
-
-//        String[] tempScores = {"1_86_60_40_70", "2_4_0_50_43"};
         Log.d("AEFfeaer", ""+ day_score);
         String[] tempScores = day_score.split("__"); // 2 underscores '__'
+
+        getSettings = getSharedPreferences(SETTINGS_FILE, MODE_PRIVATE);
+        String name = getSettings.getString("FIRST_NAME", "No Name");
+        Log.d("Settings Saved", name);
+        mainNameView = (TextView) findViewById(R.id.Name);
+        mainNameView.setText(name);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         mRecyclerView.setHasFixedSize(true);

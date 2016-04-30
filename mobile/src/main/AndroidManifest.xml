@@ -72,13 +72,13 @@
             android:name=".settings"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-            <!--&lt;!&ndash;-->
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <!--&ndash;&gt;-->
+
         </activity>
         <activity android:name=".simplePlot" />
         <activity android:name=".pictureSelect" />
@@ -115,11 +115,11 @@
             android:label="Dashboard"
             android:theme="@style/AppTheme">
 
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
         <!-- android:theme="@style/Theme.AppCompat" -->
         <activity android:name=".unupdatedDashboardGraph" />
