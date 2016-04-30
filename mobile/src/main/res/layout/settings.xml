@@ -42,7 +42,6 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/orange"
                     android:id="@+id/editTextFirstName"
-                    android:text="Andrew"
                     android:textAlignment="textEnd" />
 
                 <RelativeLayout
@@ -75,7 +74,6 @@
                     android:textColor="@color/orange"
                     android:textAlignment="textEnd"
                     android:background="@android:color/transparent"
-                    android:text="Smith"
                     android:id="@+id/editTextLastName" />
 
                 <RelativeLayout
