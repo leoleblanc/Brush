@@ -66,12 +66,18 @@ public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.View
             holder.cardView.setCardBackgroundColor(holder.cardView.getResources().getColor(R.color.periwinkle));
         }
         // TODO Time of Day
+        if (Integer.parseInt(vals[0]) == 1) {
+            holder.mTimeOfDay.setText("Morning");
+        } else {
+            holder.mTimeOfDay.setText("Evening");
+        }
+//        holder.mTimeOfDay ==
 
-        holder.mTextView.setText(vals[0]);
+        holder.mTextView.setText(vals[1]);
         // bar scores
-        int cs = Integer.parseInt(vals[1]);
-        int vs = Integer.parseInt(vals[2]);
-        int hs = Integer.parseInt(vals[3]);
+        int cs = Integer.parseInt(vals[2]);
+        int vs = Integer.parseInt(vals[3]);
+        int hs = Integer.parseInt(vals[4]);
         int full_width = holder.circularBar.getMaxWidth();
 
         float new_width1 = full_width * ((float) cs/100f);

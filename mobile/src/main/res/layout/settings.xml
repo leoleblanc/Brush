@@ -247,7 +247,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="CANCLE"
+                android:text="CANCEL"
                 android:textColor="@color/colorPrimary"
                 android:id="@+id/textView" />
         </RelativeLayout>
