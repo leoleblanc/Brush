@@ -38,7 +38,7 @@ public class settings extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.settings);
 
         cancel_button = (RelativeLayout) findViewById(R.id.cancel_button);
         edit_button = (RelativeLayout) findViewById(R.id.edit_button);
