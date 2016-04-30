@@ -55,6 +55,15 @@ public class RegistrationActivity extends Activity {
         }*/
     }
 
+    public void go_to_2_registration(View w)
+    /**
+     * Called onClick of the next button. Goes to the second registration screen.
+     */
+    {
+        Intent next = new Intent(this, Registration2Activity.class);
+        startActivity(next);
+    }
+
 
     public Bitmap getImageBitmap(Context context,String name,String extension){
         name=name+"."+extension;
