@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import java.io.FileInputStream;
+import java.util.Calendar;
 
 /**
  * Created by Me on 4/19/16.
@@ -26,17 +27,24 @@ public class DashboardDay extends SlidingMenuActivity {
     protected void onCreate(Bundle savedInstanceState) {
         /*super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_day);*/
-//        String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+        String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 //
-//        SharedPreferences data = getPreferences(0); //for storing data
+        SharedPreferences data = getPreferences(0); //for storing data
 //        SharedPreferences.Editor editor = data.edit(); //to edit data
 //        //if day of the week is Sunday, reset the data for the week
-//        Calendar c = Calendar.getInstance();
-//        int val = c.get(Calendar.DAY_OF_WEEK);
-//        String day = days[val];
-//        if (day.equals("Sunday")) {
-//            resetData(data);
-//        }
+        Calendar c = Calendar.getInstance();
+        int val = c.get(Calendar.DAY_OF_WEEK);
+        String day = days[val];
+        if (day.equals("Sunday")) {
+            resetWeekData(data);
+        }
+        if (!day.equals(data.getString("day", null))) {
+            //if it's not the same day
+            SharedPreferences.Editor editor = data.edit();
+            editor.putString("day", day);
+            //reset the scores
+            editor.putString("scores", "");
+        }
 //        //dummy data, get real data
 //        editor.putInt("Sun", 90);
 //        editor.putInt("Mon", 86);
@@ -80,7 +88,7 @@ public class DashboardDay extends SlidingMenuActivity {
 
 
 
-        String[] tempScores = {"86_60_40_70", "4_0_50_43"};
+        String[] tempScores = {"1_86_60_40_70", "2_4_0_50_43"};
         mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         mRecyclerView.setHasFixedSize(true);
 
@@ -96,17 +104,17 @@ public class DashboardDay extends SlidingMenuActivity {
 
     }
 
-//    public void resetData(SharedPreferences data) {
-//        SharedPreferences.Editor editor = data.edit();
-//        editor.putInt("Sun", 0);
-//        editor.putInt("Mon", 0);
-//        editor.putInt("Tue", 0);
-//        editor.putInt("Wed", 0);
-//        editor.putInt("Thu", 0);
-//        editor.putInt("Fri", 0);
-//        editor.putInt("Sat", 0);
-//        editor.commit();
-//    }
+    public void resetWeekData(SharedPreferences data) {
+        SharedPreferences.Editor editor = data.edit();
+        editor.putInt("Sun", 0);
+        editor.putInt("Mon", 0);
+        editor.putInt("Tue", 0);
+        editor.putInt("Wed", 0);
+        editor.putInt("Thu", 0);
+        editor.putInt("Fri", 0);
+        editor.putInt("Sat", 0);
+        editor.apply();
+    }
 
     public void toDashboardDay(View v) {
         Intent next = new Intent(this, DashboardDay.class);

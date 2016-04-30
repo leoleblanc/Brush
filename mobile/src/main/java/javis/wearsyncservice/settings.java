@@ -3,7 +3,6 @@ package javis.wearsyncservice;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -55,8 +54,8 @@ public class settings extends Activity {
 
         // get shared preferences
         settings = getSharedPreferences(SETTINGS_FILE, MODE_PRIVATE);
-        first_name = settings.getString("FIRST_NAME", "Andrew");
-        last_name = settings.getString("LAST_NAME", "Smith");
+        first_name = settings.getString("FIRST_NAME", "First Name");
+        last_name = settings.getString("LAST_NAME", "Last Name");
         age = settings.getInt("AGE", 5);
         is_male = settings.getBoolean("IS_MALE", true);
         is_left_hand = settings.getBoolean("IS_LEFT_HAND", true);

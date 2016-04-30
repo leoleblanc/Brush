@@ -1,6 +1,7 @@
 package javis.wearsyncservice;
 
 import android.content.Intent;
+import android.util.Log;
 
 import com.example.PhoneWatchClass;
 import com.google.android.gms.wearable.MessageEvent;
@@ -16,7 +17,7 @@ public class PhoneWearableListenerService extends WearableListenerService {
     public void onMessageReceived(MessageEvent messageEvent) {
         if (messageEvent.getPath().equalsIgnoreCase(PhoneWatchClass.WATCH_TO_PHONE_MESSAGE_PATH)) {
             String receivedText = new String(messageEvent.getData());
-
+            Log.d("FRom Watch", "text = " + receivedText);
             if (receivedText.startsWith("UPDATED_GRAPH"))
             {
                 Intent next = new Intent(this, updatedDashboard.class);
