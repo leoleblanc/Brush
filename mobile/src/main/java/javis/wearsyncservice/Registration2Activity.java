@@ -65,4 +65,14 @@ public class Registration2Activity extends Activity {
         Bitmap Icon = BitmapFactory.decodeResource(getResources(), R.drawable.foxicon);
         return Icon;
     }
+
+    public void go_to_pink_q(View w)
+    /**
+     * Called onClick of the finish button. Moves to the Pink Questions screen.
+     */
+    {
+        Intent next = new Intent(this, childQuestionsPink.class);
+        startActivity(next);
+    }
+
 }
