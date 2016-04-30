@@ -60,7 +60,7 @@ public class NotificationView extends AppCompatActivity {
     }
 
     public void newNotification() {
-        Intent newAlarm = new Intent(this, notificationsSet.class);
+        Intent newAlarm = new Intent(this, NotificationsSet.class);
         startActivity(newAlarm);
     }
 

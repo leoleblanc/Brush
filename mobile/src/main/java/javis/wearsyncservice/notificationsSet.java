@@ -19,7 +19,7 @@ import android.widget.TimePicker;
 /**
  * Created by Me on 4/16/16.
  */
-public class notificationsSet extends AppCompatActivity {
+public class NotificationsSet extends AppCompatActivity {
 
     private Switch mySwitch;
     private TimePicker alarmTimePicker;

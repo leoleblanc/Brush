@@ -45,7 +45,7 @@ public class DashboardWeek extends SlidingMenuActivity {
         //if day of the week is Sunday, reset the data for the week
         Calendar c = Calendar.getInstance();
         int val = c.get(Calendar.DAY_OF_WEEK);
-        String day = days[val];
+        String day = days[val-1];
         if (day.equals("Sunday")) {
             resetData(data);
         }

@@ -43,11 +43,11 @@
             android:name=".signUpBrush"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 
-            <!--<intent-filter> &lt;!&ndash; THE CORRCET FIRST SCREEN!!! &ndash;&gt;-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+            <intent-filter> <!-- THE CORRCET FIRST SCREEN!!! -->
+                <action android:name="android.intent.action.MAIN" />
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
 
         </activity>
@@ -195,11 +195,11 @@
             android:name=".NotificationView"
             android:label="@string/title_activity_notification_view"
             android:theme="@style/Theme.AppCompat.Light"            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
 
 
@@ -222,11 +222,11 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity android:name=".HiddenFirstActivity"
             android:theme="@android:style/Theme.NoDisplay">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
 
         <!-- CHECK Need this for Alarms to work-->

@@ -30,13 +30,12 @@ public class DashboardDay extends SlidingMenuActivity {
         setContentView(R.layout.dashboard_day);*/
         String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 //
-//        SharedPreferences data = getPreferences(0); //sSharedPreferences(SCORES)     for storing data
         SharedPreferences data = getSharedPreferences("SCORES", MODE_PRIVATE);
         SharedPreferences.Editor editor = getSharedPreferences("SCORES", MODE_PRIVATE).edit();
 
         String day_score = data.getString("score_day", "0_0_0_0_0__0_0_0_0_0");
+//        String first_time = data.getString("first_attempt", null);
 
-//        SharedPreferences.Editor editor = data.edit(); //to edit data
 //        //if day of the week is Sunday, reset the data for the week
         Calendar c = Calendar.getInstance();
         int val = c.get(Calendar.DAY_OF_WEEK);
@@ -53,6 +52,7 @@ public class DashboardDay extends SlidingMenuActivity {
 
         if (data.getString("day", null) == null) {
             editor.putString("day", day);
+            editor.putInt("first_attempt", 0);
         }
         Log.d("hey", day);
         if (!day.equals(data.getString("day", null))) {
@@ -60,16 +60,9 @@ public class DashboardDay extends SlidingMenuActivity {
             editor.putString("day", day);
             //reset the scores
             editor.putString("score_day", "0_0_0_0_0__0_0_0_0_0");
+            editor.putInt("first_attempt", 0); // Haven brushed for today
         }
-//        //dummy data, get real data
-//        editor.putInt("Sun", 90);
-//        editor.putInt("Mon", 86);
-//        editor.putInt("Tue", 85);
-//        editor.putInt("Wed", 80);
-//        editor.putInt("Thu", 75);
-//        editor.putInt("Fri", 80);
-//        editor.putInt("Sat", 85);
-//
+
         editor.apply();
 
         if (savedInstanceState!=null)
