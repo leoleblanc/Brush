@@ -1,11 +1,14 @@
 package javis.wearsyncservice;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -39,6 +42,7 @@ public class settings extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         setContentView(R.layout.settings);
 
         cancel_button = (RelativeLayout) findViewById(R.id.cancel_button);
@@ -81,6 +85,15 @@ public class settings extends Activity {
                 view_age.setText(String.valueOf(age));
                 switch_gender(is_male);
                 switch_hand(is_left_hand);
+
+                View view = getCurrentFocus();
+                try {
+                    InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                    view.clearFocus();
+                } catch (Exception e) {
+                    Log.d("Settings", "error " + e.toString());
+                }
             }
         });
 
@@ -107,7 +120,45 @@ public class settings extends Activity {
                 is_male = local_is_male;
                 is_left_hand = local_is_left_hand;
 
-                Toast.makeText(getBaseContext(), "New data saved", Toast.LENGTH_SHORT).show();
+                View view = getCurrentFocus();
+                try {
+                    InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                    view.clearFocus();
+                } catch (Exception e) {
+                    Log.d("Settings", "error " + e.toString());
+                }
+
+                Toast.makeText(getBaseContext(), "SAVED", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        view_male.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch_gender(true);
+            }
+        });
+
+        view_female.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch_gender(false);
+            }
+        });
+
+        view_left_hand.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch_hand(true);
+            }
+        });
+
+        view_right_hand.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch_hand(false);
             }
         });
     }
