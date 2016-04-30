@@ -24,6 +24,11 @@ public class RegistrationActivity extends Activity {
 
     }
 
+    public void onSave(View v) {
+
+    }
+
+
     public void do_photo_selction(View w)
     /**
      * Called onClick of the purple photo button. Brings up the
