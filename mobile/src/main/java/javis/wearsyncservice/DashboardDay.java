@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.FileInputStream;
 import java.util.Calendar;
@@ -23,11 +24,20 @@ public class DashboardDay extends SlidingMenuActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
+    private TextView mainNameView;
+    private SharedPreferences getSettings;
+    final String SETTINGS_FILE = "BRUSH_SETTINGS";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         /*super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_day);*/
+        getSettings = getSharedPreferences(SETTINGS_FILE, MODE_PRIVATE);
+        String name = getSettings.getString("FIRST_NAME", "No Name");
+        mainNameView = (TextView) findViewById(R.id.Name);
+        mainNameView.setText(name);
+
         String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 //
         SharedPreferences data = getSharedPreferences("SCORES", MODE_PRIVATE);
