@@ -40,6 +40,12 @@ public class signUpBrush extends Activity
 
 
     public void toSignUpWithInfoName(View v) {
+
+        SharedPreferences settings = getSharedPreferences(signUpBrush.PREFS_NAME,0);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putBoolean("hasLoggedIn", true);
+        editor.commit();
+
         Intent next = new Intent(this, RegistrationActivity.class);
         startActivity(next);
        /* SharedPreferences settings = getSharedPreferences(signUpBrush.PREFS_NAME, 0);
