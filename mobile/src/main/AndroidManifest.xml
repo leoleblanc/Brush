@@ -43,13 +43,13 @@
             android:name=".signUpBrush"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 
-            <!--
-            <intent-filter> &lt;!&ndash; THE CORRCET FIRST SCREEN!!! &ndash;&gt;
+
+            <intent-filter> <!-- THE CORRCET FIRST SCREEN!!! -->
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            -->
+
         </activity>
         <activity android:name=".signUpWithInfoName" />
         <activity android:name=".toSignUpWithInfoAge" />
@@ -58,7 +58,7 @@
         <activity android:name=".updatedDashboard" />
         <activity android:name=".updatedDashboardGraph" />
         <activity android:name=".updatedDashboardHome" />
-        <activity android:name=".notificationsSet" />
+        <activity android:name=".NotificationsSet" />
         <activity android:name=".settings" />
         <activity android:name=".simplePlot" />
         <activity android:name=".pictureSelect" />
@@ -175,11 +175,7 @@
         <activity
             android:name=".RegistrationActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Registration2Activity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
