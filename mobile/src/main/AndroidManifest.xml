@@ -44,11 +44,11 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
 
 
-            <intent-filter> <!-- THE CORRCET FIRST SCREEN!!! -->
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter> &lt;!&ndash; THE CORRCET FIRST SCREEN!!! &ndash;&gt;-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
 
         </activity>
         <activity android:name=".signUpWithInfoName" />
@@ -58,7 +58,15 @@
         <activity android:name=".updatedDashboard" />
         <activity android:name=".updatedDashboardGraph" />
         <activity android:name=".updatedDashboardHome" />
-        <activity android:name=".NotificationsSet" />
+        <activity android:name=".NotificationsSet"
+            android:theme="@style/Theme.AppCompat.Light">
+
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
         <activity android:name=".settings" />
         <activity android:name=".simplePlot" />
         <activity android:name=".pictureSelect" />
@@ -94,11 +102,11 @@
             android:name=".DashboardDay"
             android:label="Dashboard"
             android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         >
         </activity>
         <!-- android:theme="@style/Theme.AppCompat" -->
@@ -174,7 +182,15 @@
         <activity
             android:name=".NotificationView"
             android:label="@string/title_activity_notification_view"
-            android:theme="@style/Theme.AppCompat" />
+            android:theme="@style/Theme.AppCompat.Light"            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
         <activity
             android:name=".CustomDialog"
             android:theme="@style/FoxDialogueTheme" />
@@ -193,6 +209,13 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         </activity>
+
+        <!-- Need this for Alarms to work-->
+        <service
+            android:name=".AlarmService"
+            android:enabled="true" />
+        <receiver android:name=".AlarmReceiver" />
+
     </application>
 
 </manifest>
