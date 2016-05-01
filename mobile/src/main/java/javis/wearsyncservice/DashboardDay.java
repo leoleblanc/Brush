@@ -95,6 +95,10 @@ public class DashboardDay extends SlidingMenuActivity {
         getSettings = getSharedPreferences(SETTINGS_FILE, MODE_PRIVATE);
         String name = getSettings.getString("FIRST_NAME", "No Name");
         Log.d("Settings Saved", name);
+        if (name.equals(""))
+        {
+            name = "Your child";
+        }
         mainNameView = (TextView) findViewById(R.id.Name);
         mainNameView.setText(name);
 

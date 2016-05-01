@@ -58,6 +58,10 @@ public class notificationsSet extends SlidingMenuActivity {
         SharedPreferences getSettings = getSharedPreferences(SETTINGS_FILE, MODE_PRIVATE);
         String name = getSettings.getString("FIRST_NAME", "No Name");
         Log.d("Settingszzzs Saved", name);
+        if (name.equals(""))
+        {
+            name = "Your child";
+        }
         TextView mainNameView = (TextView) findViewById(R.id.Name);
         mainNameView.setText(name);
 
