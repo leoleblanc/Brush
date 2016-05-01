@@ -16,6 +16,7 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.TimePicker;
 
 import java.io.FileInputStream;
@@ -30,6 +31,7 @@ public class notificationsSet extends SlidingMenuActivity {
     private TimePicker alarmTimePicker;
     private Boolean switcherStatus;
     String NOTIFICATIONS = "notifications";
+    final String SETTINGS_FILE = "BRUSH_SETTINGS";
 
 
     @Override
@@ -52,6 +54,12 @@ public class notificationsSet extends SlidingMenuActivity {
             b.putInt("LAYOUT_ID", 34534); //id of top level Relative/Linear etc Layout
             super.onCreate(b);
         }
+
+        SharedPreferences getSettings = getSharedPreferences(SETTINGS_FILE, MODE_PRIVATE);
+        String name = getSettings.getString("FIRST_NAME", "No Name");
+        Log.d("Settingszzzs Saved", name);
+        TextView mainNameView = (TextView) findViewById(R.id.Name);
+        mainNameView.setText(name);
 
         Bitmap bmp = getImageBitmap(this, "profile", "BMP");;
         ImageView img = (ImageView) findViewById(R.id.cropped_final);

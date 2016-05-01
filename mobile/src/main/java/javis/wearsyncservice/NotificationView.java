@@ -15,6 +15,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.FileInputStream;
 import java.util.HashMap;
@@ -29,6 +30,7 @@ public class NotificationView extends SlidingMenuActivity {
     private android.support.v7.widget.RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private HashMap<Integer, PendingIntent> pendingAlarms = new HashMap<>();
+    final String SETTINGS_FILE = "BRUSH_SETTINGS";
 
 
     public static NotificationView instance() {
@@ -55,6 +57,12 @@ public class NotificationView extends SlidingMenuActivity {
             b.putInt("LAYOUT_ID", 34534); //id of top level Relative/Linear etc Layout
             super.onCreate(b);
         }
+
+        SharedPreferences getSettings = getSharedPreferences(SETTINGS_FILE, MODE_PRIVATE);
+        String name = getSettings.getString("FIRST_NAME", "No Name");
+        //Log.d("Settingszzzs Saved", name);
+        TextView mainNameView = (TextView) findViewById(R.id.Name);
+        mainNameView.setText(name);
 
         Bitmap bmp = getImageBitmap(this, "profile","BMP");;
         ImageView img = (ImageView) findViewById(R.id.cropped_final);
