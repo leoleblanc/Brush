@@ -52,7 +52,7 @@ public class settings extends SlidingMenuActivity {
 
         if (savedInstanceState!=null)
         {
-            savedInstanceState.putString("TITLE", "DASHBOARD");
+            savedInstanceState.putString("TITLE", "SETTINGS");
             savedInstanceState.putInt("LAYOUT", R.layout.settings);
             savedInstanceState.putInt("LAYOUT_ID", 34534);
             super.onCreate(savedInstanceState);
@@ -61,7 +61,7 @@ public class settings extends SlidingMenuActivity {
         else
         {
             Bundle b = new Bundle();
-            b.putString("TITLE", "DASHBOARD");
+            b.putString("TITLE", "SETTINGS");
             b.putInt("LAYOUT", R.layout.settings);
             b.putInt("LAYOUT_ID", 34534); //id of top level Relative/Linear etc Layout
             super.onCreate(b);
