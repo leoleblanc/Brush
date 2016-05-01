@@ -78,6 +78,7 @@
         android:background="@color/white"
         android:timePickerMode="spinner"
         android:layout_below="@+id/buchanan"
+        android:rotationX="360"
         android:layout_marginTop="20dp" />
 
 
@@ -93,7 +94,7 @@
             android:id="@+id/repeat_notif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="repeat"
+            android:text="repeat daily"
             android:layout_centerVertical="true"
             android:layout_weight="1"
             android:layout_gravity="left"
