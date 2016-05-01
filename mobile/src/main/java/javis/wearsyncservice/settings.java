@@ -93,7 +93,15 @@ public class settings extends SlidingMenuActivity {
         // get shared preferences
         settings = getSharedPreferences(SETTINGS_FILE, MODE_PRIVATE);
         first_name = settings.getString("FIRST_NAME", "Andrew");
+        if (first_name.equals(""))
+        {
+            first_name = "     ";
+        }
         last_name = settings.getString("LAST_NAME", "Smith");
+        if (last_name.equals(""))
+        {
+            last_name = "     ";
+        }
         age = settings.getInt("AGE", 5);
         is_male = settings.getBoolean("IS_MALE", true);
         is_left_hand = settings.getBoolean("IS_LEFT_HAND", true);
