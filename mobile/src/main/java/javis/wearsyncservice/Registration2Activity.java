@@ -94,7 +94,14 @@ public class Registration2Activity extends Activity {
     public void onSave(View v) {
         settingsEditor = getSharedPreferences(SETTINGS_FILE, MODE_PRIVATE).edit();
         String ageInput = editAge.getText().toString();
-        int age = Integer.parseInt(ageInput);
+        int age;
+        if (ageInput=="" || ageInput==null || ageInput.equals(""))
+        {
+            age = 0;
+        }
+        else {
+            age = Integer.parseInt(ageInput);
+        }
 
         settingsEditor.putInt("AGE", age);
         settingsEditor.putBoolean("IS_LEFT_HAND", is_left_handed);
