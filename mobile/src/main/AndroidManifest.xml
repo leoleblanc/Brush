@@ -192,11 +192,11 @@
             android:name=".NotificationView"
             android:label="@string/title_activity_notification_view"
             android:theme="@style/SpecialNotifTheme">
-            <intent-filter>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
             <!--android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />-->
         <activity
@@ -219,11 +219,11 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity android:name=".HiddenFirstActivity"
             android:theme="@android:style/Theme.NoDisplay">
-            <!--<intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
         </activity>
     </application>
 
