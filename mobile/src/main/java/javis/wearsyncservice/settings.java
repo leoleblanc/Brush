@@ -67,6 +67,12 @@ public class settings extends SlidingMenuActivity {
             super.onCreate(b);
         }
 
+        SharedPreferences getSettings = getSharedPreferences(SETTINGS_FILE, MODE_PRIVATE);
+        String name = getSettings.getString("FIRST_NAME", "No Name :(");
+        //Log.d("Settingszzzs Saved", name);
+        TextView mainNameView = (TextView) findViewById(R.id.Name);
+        mainNameView.setText(name);
+
         cancel_button = (RelativeLayout) findViewById(R.id.cancel_button);
         edit_button = (RelativeLayout) findViewById(R.id.edit_button);
         view_first_name = (EditText) findViewById(R.id.editTextFirstName);
