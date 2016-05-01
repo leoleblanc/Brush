@@ -60,7 +60,6 @@ public class NotificationView extends SlidingMenuActivity {
 
         SharedPreferences getSettings = getSharedPreferences(SETTINGS_FILE, MODE_PRIVATE);
         String name = getSettings.getString("FIRST_NAME", "No Name");
-        //Log.d("Settingszzzs Saved", name);
         TextView mainNameView = (TextView) findViewById(R.id.Name);
         mainNameView.setText(name);
 
@@ -105,8 +104,19 @@ public class NotificationView extends SlidingMenuActivity {
 
     public void inflateViews(String data) {
         String[] notifs = data.split("__"); // 2 underscores "_" separate notification information
+        /*Log.d("BAZOOKA", "# of notifications = "+ notifs.length);
+        if (notifs.length==0)
+        {
+            Log.d("BAZOOKA", "There are no notifications");
+            TextView empty = (TextView)findViewById(R.id.empty_string);
+            empty.setVisibility(View.VISIBLE);
+        }
+        else {*/
+        TextView empty = (TextView)findViewById(R.id.empty_string);
+        empty.setVisibility(View.INVISIBLE);
         mAdapter = new NotificationAdapter(notifs, this);
-        mRecyclerView.setAdapter(mAdapter);
+            mRecyclerView.setAdapter(mAdapter);
+        //}
     }
 
     public Bitmap getImageBitmap(Context context,String name,String extension){

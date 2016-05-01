@@ -74,6 +74,21 @@
             android:layout_marginRight="140dp" />
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/empty_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No notifications set :("
+        android:textSize="28dp"
+        android:textColor="#91999C"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/buchanan"
+        android:visibility="visible"/>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/notification_list"
         android:scrollbars="vertical"
