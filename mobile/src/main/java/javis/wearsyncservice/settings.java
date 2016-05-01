@@ -2,6 +2,7 @@ package javis.wearsyncservice;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -247,4 +248,35 @@ public class settings extends SlidingMenuActivity {
         Bitmap Icon = BitmapFactory.decodeResource(getResources(), R.drawable.foxicon);
         return Icon;
     }
+
+    public void settings_photo_selection(View w)
+    /**
+     * Called onClick of the purple photo button. Brings up the
+     * photo selection dialog
+     */
+    {
+        Log.d("BAZOOKA", "DETECTED THE PHOTO BUTTON CLICK");
+        Intent intent = new Intent(this, CircCropActivity.class);
+        startActivityForResult(intent, CircCropImplementation.BITMAP_REQUEST_CODE);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.d("BAZOOKA", "back from selecting the photo");
+        Bitmap bmp = getImageBitmap(this, "profile","BMP");
+        ImageView img = (ImageView) findViewById(R.id.cropped_final);
+        img.setImageDrawable(new RoundedAvatarDrawable(bmp));
+        /*switch(requestCode) {
+            case (MY_CHILD_ACTIVITY) : {
+                if (resultCode == Activity.RESULT_OK) {
+                    // TODO Extract the data returned from the child Activity.
+                }
+                break;
+            }
+        }*/
+    }
+
+
+
 }

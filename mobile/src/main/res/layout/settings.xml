@@ -40,7 +40,24 @@
             android:layout_alignParentEnd="false"
             android:layout_alignParentStart="false"
             android:layout_marginRight="239dp"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:onClick="settings_photo_selection"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/photo_bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/cropped_final"
+            android:layout_alignLeft="@id/cropped_final"
+            android:background="@drawable/settings_purple_photo_icon"
+            android:scaleType="fitXY"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="420dp"
+            android:clickable="true"
+            android:onClick="settings_photo_selection" />
 
         <TextView
             android:layout_width="wrap_content"
