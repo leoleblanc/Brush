@@ -70,8 +70,9 @@
             android:layout_marginTop="30dp"
             android:textColor="@color/darkGrey"
             android:textSize="24dp"
-            android:layout_alignParentEnd="false"
-            android:layout_marginRight="140dp" />
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="100dp"
+            android:layout_alignParentStart="false" />
     </RelativeLayout>
 
     <TextView
