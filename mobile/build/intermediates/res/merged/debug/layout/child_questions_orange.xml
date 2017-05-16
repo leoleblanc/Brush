@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/child_questions_orange">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:id="@+id/button24"
+        android:alpha="1"
+        android:background="#00000000"
+        android:onClick="toChildQuestionsBlue"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp" />
+</RelativeLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/orange">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="325dp"
+        android:layout_height="500dp"
+        android:background="@drawable/dialog_shape"
+        android:id="@+id/linearLayout3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="190dp"
+            android:layout_height="68dp"
+            android:id="@+id/button37"
+            android:layout_marginBottom="40dp"
+            android:layout_above="@+id/skip_bttn"
+            android:layout_centerHorizontal="true"
+            android:onClick="toChildQuestionsOrange"
+            android:alpha="1"
+            android:background="#00000000"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When was Andrew&apos;s toothbrush last replaced?"
+            android:id="@+id/question"
+            android:textColor="@color/darkGrey"
+            android:textSize="20dp"
+            android:textIsSelectable="false"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="120dp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp">
+            <RadioButton android:id="@+id/radio_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the last 3 months"
+                android:onClick="toChildQuestionsBlue"/>
+            <RadioButton android:id="@+id/radio_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In the last 6 months"
+                android:onClick="toChildQuestionsBlue"
+                android:nestedScrollingEnabled="false" />
+            <RadioButton android:id="@+id/radio_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More than 6 months back"
+                android:onClick="toChildQuestionsBlue" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:id="@+id/skip_bttn"
+        android:alpha="1"
+        android:background="@drawable/whiteroundbutton"
+        android:onClick="toChildQuestionsBlue"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:layout_marginTop="20dp"
+        android:text="SKIP"
+        android:textColor="@color/darkGrey" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/cropped_final"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.41"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="javis.wearsyncservice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Include required permissions for Google Mobile Ads to run -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" /> <!-- Permissions required for GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--
+            Because android:exported is set to "false",
+            the service is only available to this app.
+        -->
+        <service
+            android:name="javis.wearsyncservice.SendWatchMessageIntentService"
+            android:exported="false" />
+
+        <!-- Change adjustNothing to adjustPan after you do the real layout -->
+        <activity
+            android:name="javis.wearsyncservice.SendMsgActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|uiMode"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="javis.wearsyncservice.signUpBrush"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+            <!--
+            <intent-filter> &lt;!&ndash; THE CORRCET FIRST SCREEN!!! &ndash;&gt;
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name="javis.wearsyncservice.signUpWithInfoName" />
+        <activity android:name="javis.wearsyncservice.toSignUpWithInfoAge" />
+        <activity android:name="javis.wearsyncservice.weeklyQuestions" />
+        <activity android:name="javis.wearsyncservice.learnMore" />
+        <activity android:name="javis.wearsyncservice.updatedDashboard" />
+        <activity android:name="javis.wearsyncservice.updatedDashboardGraph" />
+        <activity android:name="javis.wearsyncservice.updatedDashboardHome" />
+        <activity android:name="javis.wearsyncservice.notificationsSet" />
+        <activity android:name="javis.wearsyncservice.settings" />
+        <activity android:name="javis.wearsyncservice.simplePlot" />
+        <activity android:name="javis.wearsyncservice.pictureSelect" />
+        <activity
+            android:name="javis.wearsyncservice.childQuestionsPink"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="javis.wearsyncservice.childQuestionsOrange"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="javis.wearsyncservice.childQuestionsBlue"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name="javis.wearsyncservice.ColouredQActivity" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="javis.wearsyncservice.DashboardDay"
+            android:label="Dashboard"
+            android:theme="@style/AppTheme" />
+        <!-- android:theme="@style/Theme.AppCompat" -->
+        <activity android:name="javis.wearsyncservice.unupdatedDashboardGraph" />
+        <activity android:name="javis.wearsyncservice.unupdatedDashboardHome" />
+        <activity
+            android:name="javis.wearsyncservice.signUpTrack"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="javis.wearsyncservice.signUpCare"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="javis.wearsyncservice.SlidingMenuActivity" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <!-- <activity android:name=".ImageSelectActivity"> -->
+
+
+        <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        -->
+        <!-- </activity> -->
+        <activity
+            android:name="javis.wearsyncservice.CircCropActivity"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" >
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+            -->
+        </activity>
+        <activity android:name="javis.wearsyncservice.DrawerImplementation" >
+
+            <!--
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity android:name="javis.wearsyncservice.CircCropImplementation" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <service android:name="javis.wearsyncservice.PhoneWearableListenerService" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="javis.wearsyncservice.NotificationView"
+            android:label="@string/title_activity_notification_view"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name="javis.wearsyncservice.CustomDialog"
+            android:theme="@style/FoxDialogueTheme" />
+        <activity android:name="javis.wearsyncservice.DashboardWeek" />
+        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+        <activity
+            android:name="com.google.android.gms.appinvite.PreviewActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppInvite.Preview" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <provider
+            android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"
+            android:authorities="javis.wearsyncservice.google_measurement_service"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

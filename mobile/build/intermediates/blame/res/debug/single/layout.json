@@ -1,0 +1,378 @@
+[
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/dashboard_score_view.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/dashboard_score_view.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/child_questions_pink.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/child_questions_pink.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/sign_up_brush.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/sign_up_brush.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/learn_more.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/learn_more.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/sign_up_care.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/sign_up_care.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/crop__activity_crop.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.soundcloud.android/android-crop/1.0.1/res/layout/crop__activity_crop.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/activity_send_msg.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/activity_send_msg.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/unupdated_dashboard_home.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/unupdated_dashboard_home.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/header.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/header.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/activity_circ_crop.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/activity_circ_crop.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/place_autocomplete_item_prediction.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout/place_autocomplete_item_prediction.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/mr_media_route_controller_material_dialog_b.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout/mr_media_route_controller_material_dialog_b.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/updated_home.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/updated_home.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/unupdated_graph.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/unupdated_graph.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/sliding_row_layout.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/sliding_row_layout.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/activity_drawer_implementation.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/activity_drawer_implementation.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_menu.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/dashboard_day.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/dashboard_day.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/child_questions_orange.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/child_questions_orange.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/simple_plot.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/simple_plot.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/activity_coloured_q.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/activity_coloured_q.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/sign_up_track.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/sign_up_track.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/custom_dialog.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/updated_dashboard_graph.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/updated_dashboard_graph.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/activity_circ_crop_implementation.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/activity_circ_crop_implementation.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/child_questions_blue.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/child_questions_blue.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/content_main.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/content_main.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/fragment_coloured_q.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/fragment_coloured_q.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/content_notification_view.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/content_notification_view.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/sign_up_with_info_name.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/sign_up_with_info_name.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/activity_notification_view.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/activity_notification_view.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/place_autocomplete_progress.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout/place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/place_autocomplete_fragment.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/sign_up_with_info_age.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/sign_up_with_info_age.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/mr_media_route_chooser_dialog.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout/mr_media_route_chooser_dialog.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/crop__layout_done_cancel.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.soundcloud.android/android-crop/1.0.1/res/layout/crop__layout_done_cancel.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/mr_media_route_list_item.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout/mr_media_route_list_item.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/place_autocomplete_item_powered_by_google.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout/place_autocomplete_item_powered_by_google.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/weekly_questions.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/weekly_questions.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/dashboard_week.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/dashboard_week.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/updated_dashboard.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/updated_dashboard.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/picture_select.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/picture_select.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/settings.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/settings.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/crop_image_view.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.theartofdev.edmodo/android-image-cropper/1.2.6/res/layout/crop_image_view.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/activity_sliding_menu.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/activity_sliding_menu.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/set_notifications.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/set_notifications.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/Users/Me/Desktop/groupProj/Group-21-Project/mobile/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item_header.xml"
+    }
+]

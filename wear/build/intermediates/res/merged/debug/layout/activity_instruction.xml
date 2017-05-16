@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:background="@drawable/switch_hand2"
+    tools:context="comjavis.wearsyncservice.InstructionActivity"
+    tools:deviceIds="wear_round">
+
+    <!--<android.support.wearable.view.GridViewPager-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="New Text2"-->
+        <!--android:background="@color/blue"-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:visibility="invisible"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+</RelativeLayout>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.wearable.view.WatchViewStub xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/watch_view_stub"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:rectLayout="@layout/rect_activity_instruction"-->
+    <!--app:roundLayout="@layout/round_activity_instruction"-->
+    <!--tools:context="javis.wearsyncservice.InstructionActivity"-->
+    <!--tools:deviceIds="wear"></android.support.wearable.view.WatchViewStub>-->

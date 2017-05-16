@@ -1,0 +1,148 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:2:1-86:12
+	package
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:3:5-36
+		INJECTED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml
+		INJECTED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml
+		INJECTED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml
+		INJECTED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml
+uses-feature#android.hardware.type.watch
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:5:5-64
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:5:19-61
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:7:5-68
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:7:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:9:22-63
+application
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:11:5-84:19
+MERGED from [com.google.android.support:wearable:1.3.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.3.0/AndroidManifest.xml:8:5-20
+MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:23.1.1] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-wearable:8.3.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.3.0/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.3.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:14:9-41
+	android:supportsRtl
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:15:9-35
+	android:allowBackup
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:12:9-35
+	android:icon
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:13:9-43
+	android:theme
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:16:9-59
+uses-library#com.google.android.wearable
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:17:9-19:40
+	android:required
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:18:13-55
+meta-data#com.google.android.gms.version
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:8.3.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:22:13-58
+service#javis.wearsyncservice.SendPhoneMessageIntentService
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:29:9-31:40
+	android:exported
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:30:13-58
+service#javis.wearsyncservice.AccelService
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:33:9-49
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:33:18-46
+activity#javis.wearsyncservice.MainActivity
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:36:9-50:20
+	android:label
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:38:13-45
+	android:theme
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:39:13-69
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:37:13-41
+service#javis.wearsyncservice.WatchWearableListenerService
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:52:9-56:19
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:52:18-62
+intent-filter#com.google.android.gms.wearable.BIND_LISTENER
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:53:13-55:29
+action#com.google.android.gms.wearable.BIND_LISTENER
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:54:17-88
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:54:25-85
+activity#javis.wearsyncservice.HelloWorldActivity
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:58:9-67:20
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:58:19-53
+activity#javis.wearsyncservice.InstructionActivity
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:68:9-76:20
+	android:label
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:70:13-63
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:69:13-48
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:71:13-75:29
+action#android.intent.action.MAIN
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:72:17-69
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:72:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:74:17-77
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:74:27-74
+activity#javis.wearsyncservice.TimerActivity
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:77:9-79:60
+	android:label
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:79:13-57
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:78:13-42
+activity#javis.wearsyncservice.ResultActivity
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:80:9-82:70
+	android:label
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:82:13-58
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:81:13-43
+receiver#javis.wearsyncservice.MsgReceiver
+ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:83:9-49
+	android:name
+		ADDED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml:83:19-46
+uses-sdk
+INJECTED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.google.android.support:wearable:1.3.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/1.3.0/AndroidManifest.xml:4:5-6:41
+MERGED from [com.android.support:recyclerview-v7:22.0.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-wearable:8.3.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.3.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.3.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.3.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.3.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.1.7] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/pl.droidsonroids.gif/android-gif-drawable/1.1.7/AndroidManifest.xml:6:5-8:41
+	android:targetSdkVersion
+		INJECTED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml
+		INJECTED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml
+		INJECTED from /Users/Me/Desktop/groupProj/Group-21-Project/wear/src/main/AndroidManifest.xml
+activity#android.support.v7.widget.TestActivity
+ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:23:9-25:56
+	android:label
+		ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:25:13-53
+	android:name
+		ADDED from [com.android.support:recyclerview-v7:22.0.0] /Users/Me/Desktop/groupProj/Group-21-Project/wear/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/AndroidManifest.xml:24:13-66
